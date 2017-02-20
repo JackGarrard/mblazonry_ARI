@@ -1,0 +1,36 @@
+/*.........................
+    Colour variables
+.........................*/
+
+/*** mblazonry brand colours ***/
+
+$mbl-brand-green: #45A840;
+$mbl-brand-blue: #0098C0;
+$mbl-brand-orange: #F36F21;
+
+/*** Greyscale ***/
+
+$mbl-grey-black: #000000;
+$mbl-grey-90: #1a1a1a;
+$mbl-grey-80: #333333;
+$mbl-grey-70: #4d4d4d;
+$mbl-grey-60: #666666;
+$mbl-grey-50: #808080;
+$mbl-grey-40: #999999;
+$mbl-grey-30: #b3b3b3;
+$mbl-grey-20: #cdcdcd;
+$mbl-grey-10: #e5e5e5;
+$mbl-grey-white: #ffffff;
+
+/*** Utilities ***/
+
+/*** Utility classes are used to provide feedback to users, such as in alert messages, form validation, etc. ***/
+
+$mbl-util-positive: #006600;
+$mbl-util-positive-subtle: #009966;
+$mbl-util-neutral: #006699;
+$mbl-util-neutral-subtle: #3399ff;
+$mbl-util-caution: #ffff66;
+$mbl-util-caution-subtle: #ffff99;
+$mbl-util-negative: #cc0000;
+$mbl-util-negative-subtle: #cc3333;

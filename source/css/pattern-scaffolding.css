@@ -50,8 +50,9 @@
 }
 
 .sg-label {
-  font-size: 90%;
+  font-size: 80%;
   line-height: 1;
+  font-family: "nunito", sans-serif;
 }
 
 #atoms-logo-reversed .sg-pattern-example {
