@@ -4,9 +4,11 @@
  * The gulp wrapper around patternlab-node core, providing tasks to interact with the core library and move supporting frontend assets.
 ******************************************************/
 var gulp = require('gulp'),
-  path = require('path'),
-  browserSync = require('browser-sync').create(),
-  argv = require('minimist')(process.argv.slice(2));
+    path = require('path'),
+    browserSync = require('browser-sync').create(),
+    argv = require('minimist')(process.argv.slice(2));
+
+var sass = require('gulp-sass');
 
 function resolvePath(pathInput) {
   return path.resolve(pathInput).replace(/\\/g,"/");
@@ -206,8 +208,17 @@ gulp.task('patternlab:connect', gulp.series(function(done) {
 }));
 
 /******************************************************
+ * SASS Build
+*******************************************************/
+gulp.task('sass', function () {
+  return gulp.src('source/css/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('source/css/'));
+});
+
+/******************************************************
  * COMPOUND TASKS
 ******************************************************/
-gulp.task('default', gulp.series('patternlab:build'));
-gulp.task('patternlab:watch', gulp.series('patternlab:build', watch));
-gulp.task('patternlab:serve', gulp.series('patternlab:build', 'patternlab:connect', watch));
+gulp.task('default', gulp.series('sass','patternlab:build'));
+gulp.task('patternlab:watch', gulp.series('sass','patternlab:build', watch));
+gulp.task('patternlab:serve', gulp.series('sass','patternlab:build', 'patternlab:connect', watch));

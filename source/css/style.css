@@ -1,3 +1,225 @@
+/*.......................................
+   Table of contents
+.......................................*/
 /*
- * YOUR STYLES HERE
+*
+* CORE....................Declarations of scss variables
+* colour-variables........colour variables
+* global-classes..........base styles used across entire site
+* headings................base styles used for headings (H1, H2, etc.)
+* links...................base styles used for links
+* reset...................css reset to reset default browser styles
+* spacing-variables.......base styles and variables for spacing content
+* typography-variables....font variables
+*
+*****
+*****
+*
+* COMPONENTS...............Styles specific to components
+* 
+*/
+/*.....................................
+    CORE
+.....................................*/
+/**
+ * Use border box on all elements
  */
+/* line 4, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_reset.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/**
+ * Zero out margin and padding on most elements as base style
+ */
+/* line 13, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_reset.scss */
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, legend, label, table, header, footer, nav, section, figure {
+  margin: 0;
+  padding: 0; }
+
+/**
+ * Display block as base for these elements
+ */
+/* line 21, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_reset.scss */
+header, footer, nav, section, article, hgroup, figure {
+  display: block; }
+
+/*.........................
+    Colour variables
+.........................*/
+/*** mblazonry brand colours ***/
+/*** Greyscale ***/
+/*** Utilities ***/
+/*** Utility classes are used to provide feedback to users, such as in alert messages, form validation, etc. ***/
+/*.........................
+    Typography variables
+.........................*/
+/*** The two Google fonts used here ('Nunito' and 'Roboto') have been embeded with the following weights: 400 and 700. ***/
+/*** Fonts ***/
+/*** Font weights ***/
+/*** Font sizes ***/
+/*.........................
+    Spacing Variables
+.........................*/
+/*** Spacing ***/
+/*** Borders ***/
+/*.........................
+    Global classes
+.........................*/
+/*** Clearfix ***/
+/* These classes are based on the micro clearfix hack by Nicholas Gallagher - http://nicolasgallagher.com/micro-clearfix-hack/ */
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 19, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_global-classes.scss */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+/* line 25, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_global-classes.scss */
+.cf:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 33, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_global-classes.scss */
+.cf {
+  *zoom: 1; }
+
+/*** Hidden ***/
+/* line 39, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_global-classes.scss */
+.is-hidden {
+  display: none !important;
+  visibility: hidden !important; }
+
+/*** Alignment ***/
+/* line 46, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_global-classes.scss */
+.align-right {
+  text-align: right; }
+
+/* line 50, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_global-classes.scss */
+.align-center {
+  text-align: center; }
+
+/* line 54, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_global-classes.scss */
+.align-left {
+  text-align: left; }
+
+/*** Feedback colours ***/
+/* line 60, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_global-classes.scss */
+.mbl-valid {
+  color: #006600; }
+
+/* line 64, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_global-classes.scss */
+.mbl-warning {
+  color: #ffff66; }
+
+/* line 68, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_global-classes.scss */
+.mbl-error {
+  color: #cc0000; }
+
+/* line 72, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_global-classes.scss */
+.mbl-neutral {
+  color: #006699; }
+
+/*** Fonts ***/
+/* line 78, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_global-classes.scss */
+.mbl-font-primary {
+  font-family: "Roboto", sans-serif; }
+
+/* line 82, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_global-classes.scss */
+.mbl-font-secondary {
+  font-family: "Nunito", sans-serif; }
+
+/* line 86, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_global-classes.scss */
+.mbl-font-weight-reg {
+  font-weight: 400; }
+
+/* line 90, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_global-classes.scss */
+.mbl-font-weight-ital {
+  font-weight: 400;
+  font-style: italic; }
+
+/* line 95, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_global-classes.scss */
+.mbl-font-weight-bold {
+  font-weight: 700; }
+
+/* line 99, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_global-classes.scss */
+.mbl-font-small {
+  font-size: 0.75rem; }
+
+/* line 103, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_global-classes.scss */
+.mbl-font-med {
+  font-size: 1rem; }
+
+/* line 107, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_global-classes.scss */
+.mbl-font-large {
+  font-size: 1.25rem; }
+
+/*..............................
+    Headings
+..............................*/
+/* line 5, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_headings.scss */
+h1 {
+  font-size: 3rem;
+  line-height: 1.2; }
+
+/* line 10, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_headings.scss */
+h2 {
+  font-size: 2.6rem;
+  line-height: 1.2; }
+
+/* line 15, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_headings.scss */
+h3 {
+  font-size: 2.2rem;
+  line-height: 1.2; }
+
+/* line 20, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_headings.scss */
+h4 {
+  font-size: 2rem;
+  line-height: 1.2; }
+
+/* line 25, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_headings.scss */
+h5 {
+  font-size: 1.6rem;
+  line-height: 1.2; }
+
+/* line 30, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_headings.scss */
+h6 {
+  font-size: 1.2rem;
+  line-height: 1.2; }
+
+/* line 35, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_headings.scss */
+.subheading {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400; }
+
+/*.........................
+    Links
+.........................*/
+/* line 5, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_links.scss */
+a {
+  color: #808080;
+  text-decoration: none;
+  outline: 0; }
+  /* line 10, E:/GITHUB/mblazonry_ARI/source/css/scss/core/_links.scss */
+  a:hover, a:focus {
+    color: #4d4d4d; }
+
+/*.....................................
+    COMPONENTS
+.....................................*/
+
+/*# sourceMappingURL=style.css.map */

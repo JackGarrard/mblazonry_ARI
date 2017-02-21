@@ -1,0 +1,38 @@
+/*.......................................
+   Table of contents
+.......................................*/
+
+/*
+*
+* CORE....................Declarations of scss variables
+* colour-variables........colour variables
+* global-classes..........base styles used across entire site
+* headings................base styles used for headings (H1, H2, etc.)
+* links...................base styles used for links
+* reset...................css reset to reset default browser styles
+* spacing-variables.......base styles and variables for spacing content
+* typography-variables....font variables
+*
+*****
+*****
+*
+* COMPONENTS...............Styles specific to components
+* 
+*/
+
+
+/*.....................................
+    CORE
+.....................................*/
+
+@import "scss/core/reset";
+@import "scss/core/colour-variables";
+@import "scss/core/typography-variables";
+@import "scss/core/spacing-variables";
+@import "scss/core/global-classes";
+@import "scss/core/headings";
+@import "scss/core/links";
+
+/*.....................................
+    COMPONENTS
+.....................................*/
