@@ -10,9 +10,21 @@ $mbl-space-double : $mbl-space*2;
 $mbl-space-quad : $mbl-space*4;
 $mbl-space-half : $mbl-space/2;
 
+/*** Padding ***/
+
+$mbl-pad : 1em;
+$mbl-pad-and-half : $mbl-pad*1.5;
+$mbl-pad-double : $mbl-pad*2;
+$mbl-pad-triple : $mbl-pad*3;
+$mbl-pad-half : $mbl-pad/2;
+$mbl-pad-quarter :$mbl-pad/4;
+
 /*** Borders ***/
 
 $mbl-border-sm: 3px;
 $mbl-border-lg: 7px;
 
-$mbl-border-radius: 5px;
+$mbl-border-radius-small: 3px;
+$mbl-border-radius-med: 5px;
+$mbl-border-radius-large: 7px;
+
