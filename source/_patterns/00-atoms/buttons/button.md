@@ -1,5 +1,5 @@
 ---
-title: Button
+title: Multi-purpose button for mBlazonry components
 ---
 
-[Insert description here]
+This multi-purpose button is meant to be used with mBlazonry components

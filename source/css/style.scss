@@ -6,7 +6,7 @@
 *
 * CORE....................Declarations of scss variables
 * colour-variables........colour variables
-* global-classes..........base styles used across entire site
+* global-classes..........Various classes and base styles used across entire site
 * headings................base styles used for headings (H1, H2, etc.)
 * links...................base styles used for links
 * reset...................css reset to reset default browser styles
@@ -36,3 +36,5 @@
 /*.....................................
     COMPONENTS
 .....................................*/
+
+@import "scss/components/buttons";
