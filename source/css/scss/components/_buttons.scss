@@ -51,6 +51,18 @@
         }
     }
     
+    /*** caution button ***/
+    
+    &.caution {
+        background: $mbl-util-caution;
+        color: $mbl-grey-80;
+        
+            &:hover, &:focus {
+                background: $mbl-util-caution-subtle;
+                color: $mbl-grey-50;
+        }
+    }
+    
     /*** small button ***/
     
     &.small {
@@ -64,6 +76,7 @@
         padding: $mbl-pad-and-half $mbl-pad-triple;
         font-weight: $mbl-font-bold;
         font-size: $mbl-font-large;
+        border-radius: $mbl-border-radius-large;
     }
 }
 
@@ -84,7 +97,7 @@
 		content: "";
 		height: 20px;
 		width: 20px;
-		background: url("../../../images/double-chevron.svg") no-repeat;
+		background: url("../../../images/double-chevron-right.svg") no-repeat;
 	    top: 5px;
 		right: -25px;
 		transition: all 0.2s ease;
@@ -125,6 +138,16 @@
         
          &:hover, &:focus {
 	        color: $mbl-util-negative-subtle;
+        }
+    }
+    
+    /*** caution text button ***/
+    
+    &.caution {
+        color: $mbl-util-caution;
+        
+         &:hover, &:focus {
+	        color: $mbl-util-caution-subtle;
         }
     }
 }
