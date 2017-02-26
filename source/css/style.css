@@ -218,6 +218,7 @@ a {
   border-radius: 5px;
   text-align: center;
   transition: background 0.2s ease;
+  cursor: pointer;
   /*** disabled button ***/
   /*** positive button ***/
   /*** negative button ***/
@@ -230,6 +231,8 @@ a {
   .mbl-btn.disabled {
     background: #b3b3b3;
     color: #808080; }
+    .mbl-btn.disabled:hover, .mbl-btn.disabled:focus {
+      cursor: default; }
   .mbl-btn.positive {
     background: #006600; }
     .mbl-btn.positive:hover, .mbl-btn.positive:focus {
@@ -277,11 +280,14 @@ a {
     right: -25px;
     transition: all 0.2s ease; }
   .mbl-text-btn:hover, .mbl-text-btn:focus {
-    color: #3399ff; }
+    color: #3399ff;
+    cursor: pointer; }
     .mbl-text-btn:hover:after, .mbl-text-btn:focus:after {
       right: -35px; }
   .mbl-text-btn.disabled {
     color: #b3b3b3; }
+    .mbl-text-btn.disabled:hover {
+      cursor: default; }
     .mbl-text-btn.disabled:after {
       right: -25px; }
   .mbl-text-btn.positive {
