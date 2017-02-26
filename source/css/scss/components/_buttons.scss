@@ -17,6 +17,7 @@
 	border-radius: $mbl-border-radius-med;
 	text-align: center;
 	transition: background 0.2s ease;
+    cursor: pointer;
 
 	&:hover, &:focus {
 		background: $mbl-util-neutral-subtle;
@@ -28,6 +29,10 @@
 	&.disabled {
 		background: $mbl-grey-30;
 		color: $mbl-grey-50;
+        
+        &:hover, &:focus {
+            cursor: default;
+        }
 	}
     
     /*** positive button ***/
@@ -105,6 +110,7 @@
     
     &:hover, &:focus {
 	    color: $mbl-util-neutral-subtle;
+        cursor: pointer;
 	    
 	    &:after {
 		    right: -35px;
@@ -114,11 +120,15 @@
     /*** disabled text button ***/
     
     &.disabled {
-		color: $mbl-grey-30;
+		color: $mbl-grey-30; 
 	    
-	    &:after {
-		    right: -25px;
+	    &:hover{
+            cursor: default;
 	    }
+        
+        &:after {
+            right: -25px;
+        }
 	}
     
     /*** positive text button ***/
