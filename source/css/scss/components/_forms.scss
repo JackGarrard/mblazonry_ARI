@@ -119,3 +119,47 @@
     }
 }
 
+/*** Radio button ***/
+
+input[type=radio] {
+    display: none;
+}
+
+.mbl-radio-btn{
+    
+    & label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: $mbl-pad-double-and-half;
+    margin-right: $mbl-pad;
+    font-size: $mbl-font-large;
+    font-family: $mbl-font-secondary;
+    
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            position: absolute;
+            left: 0;
+            bottom: 1px;
+            background-color: $mbl-util-neutral;
+            border-radius: 50%;
+        }
+    }
+    
+    &:hover label{
+        color: $mbl-util-neutral;
+        transition: all 0.2s ease;
+    }
+}
+
+input[type=radio]:checked + label:before {
+    content: "\2022";
+    color: $mbl-grey-10;
+    font-size: 40px;
+    text-align: center;
+    line-height: 25px;
+}
