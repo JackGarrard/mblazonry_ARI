@@ -596,7 +596,7 @@ input[type=radio] {
     cursor: default;
     color: #cdcdcd;
     transition: none; }
-  .mbl-radio-btn input[type=radio]:checked + label:before {
+  .mbl-radio-btn input[type=radio]:checked + input[type=radio] > label:before {
     content: "\2022";
     color: #e5e5e5;
     font-size: 40px;
