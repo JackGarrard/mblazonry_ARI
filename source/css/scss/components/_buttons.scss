@@ -83,6 +83,39 @@
         font-size: $mbl-font-large;
         border-radius: $mbl-border-radius-large;
     }
+     /*** TEST BLUE BUTTON ***/
+    
+    &.blue-test {
+        background: $mbl-dark-blue;
+        color: $mbl-grey-white;
+        
+            &:hover, &:focus {
+                background: $mbl-darker-blue;
+                color: $mbl-grey-white;
+        }
+    }
+     /*** TEST ORANGE BUTTON ***/
+    
+    &.orange-test {
+        background: $mbl-bright-orange;
+        color: $mbl-grey-80;
+        
+            &:hover, &:focus {
+                background: $mbl-dark-orange;
+                color: $mbl-grey-50;
+        }
+    }
+     /*** TEST PURPLE BUTTON ***/
+    
+    &.purple-test {
+        background: $mbl-light-purple;
+        color: $mbl-grey-80;
+        
+            &:hover, &:focus {
+                background: $mbl-dark-purple;
+                color: $mbl-grey-50;
+        }
+    }
 }
 
 /*** text buttons ***/

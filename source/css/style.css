@@ -51,6 +51,7 @@ header, footer, nav, section, article, hgroup, figure {
 .........................*/
 /*** mblazonry brand colours ***/
 /*** Greyscale ***/
+/*** Assorted Test Colours ***/
 /*** Utilities ***/
 /*** Utility classes are used to provide feedback to users, such as in alert messages, form validation, etc. ***/
 /*** utility positive ***/
@@ -481,7 +482,10 @@ a {
   /*** negative button ***/
   /*** caution button ***/
   /*** small button ***/
-  /*** large button ***/ }
+  /*** large button ***/
+  /*** TEST BLUE BUTTON ***/
+  /*** TEST ORANGE BUTTON ***/
+  /*** TEST PURPLE BUTTON ***/ }
   .mbl-btn:hover, .mbl-btn:focus {
     background: #3399ff;
     color: #333333; }
@@ -513,6 +517,24 @@ a {
     font-weight: 700;
     font-size: 1.25rem;
     border-radius: 7px; }
+  .mbl-btn.blue-test {
+    background: #16353B;
+    color: #ffffff; }
+    .mbl-btn.blue-test:hover, .mbl-btn.blue-test:focus {
+      background: #132E33;
+      color: #ffffff; }
+  .mbl-btn.orange-test {
+    background: #CF4936;
+    color: #333333; }
+    .mbl-btn.orange-test:hover, .mbl-btn.orange-test:focus {
+      background: #BD4331;
+      color: #808080; }
+  .mbl-btn.purple-test {
+    background: #575BBD;
+    color: #333333; }
+    .mbl-btn.purple-test:hover, .mbl-btn.purple-test:focus {
+      background: #4F53AB;
+      color: #808080; }
 
 /*** text buttons ***/
 .mbl-text-btn {
