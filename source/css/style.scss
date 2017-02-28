@@ -19,7 +19,8 @@
 *
 * COMPONENTS...............Styles specific to components
 * buttons..................Styles specific to all buttons
-* fields...................Styles specific to all input fields, etc.
+* fields...................Styles specific to all input fields
+* forms....................Styles specific to all forms
 * 
 */
 
@@ -43,3 +44,4 @@
 
 @import "scss/components/buttons";
 @import "scss/components/fields";
+@import "scss/components/forms";

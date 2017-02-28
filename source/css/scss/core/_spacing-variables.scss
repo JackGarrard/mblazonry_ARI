@@ -20,6 +20,16 @@ $mbl-pad-triple : $mbl-pad*3;
 $mbl-pad-half : $mbl-pad/2;
 $mbl-pad-quarter :$mbl-pad/4;
 
+/*** Margin ***/
+
+$mbl-margin : 1em;
+$mbl-margin-and-half : $mbl-margin*1.5;
+$mbl-margin-double : $mbl-margin*2;
+$mbl-margin-double-and-half: $mbl-margin*2.5;
+$mbl-margin-triple : $mbl-margin*3;
+$mbl-margin-half : $mbl-margin/2;
+$mbl-margin-quarter :$mbl-margin/4;
+
 /*** Borders ***/
 
 $mbl-border-sm: 3px;

@@ -1,5 +1,5 @@
 /*.........................
-  Mblazonry form styles
+  Mblazonry field styles
 .........................*/
 
 /*** text inputs ***/
@@ -78,7 +78,7 @@
     font-weight: $mbl-font-bold;
     color: $mbl-grey-black;
     background: $mbl-grey-white;
-    padding: $mbl-pad-half $mbl-pad;
+    padding: $mbl-pad-half $mbl-pad-double;
     border-style: none;
     border: 2px solid $mbl-util-neutral;
     border-radius: $mbl-border-radius-small;
@@ -116,6 +116,18 @@
         outline: 2px solid $mbl-util-neutral;
         outline-style: none;
         box-shadow: none;
+    }
+}
+
+/*** Labeled input field styles ***/
+
+.mbl-input-field{
+    margin-bottom: $mbl-pad;
+    
+    &>.label{
+        font-family: $mbl-font-secondary;
+        font-weight: $mbl-font-reg;
+        font-size: $mbl-font-med;
     }
 }
 
