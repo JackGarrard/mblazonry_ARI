@@ -738,3 +738,6 @@ input[type=radio] {
 /*.........................
   Mblazonry field styles
 .........................*/
+.mbl-form-test-feb27 {
+  border: 2xp solid #006699;
+  border-radius: 3px; }
