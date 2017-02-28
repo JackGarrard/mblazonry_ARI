@@ -82,40 +82,8 @@
         font-weight: $mbl-font-bold;
         font-size: $mbl-font-large;
         border-radius: $mbl-border-radius-large;
-    }
-     /*** TEST BLUE BUTTON ***/
-    
-    &.blue-test {
-        background: $mbl-dark-blue;
-        color: $mbl-grey-white;
-        
-            &:hover, &:focus {
-                background: $mbl-darker-blue;
-                color: $mbl-grey-white;
-        }
-    }
-     /*** TEST ORANGE BUTTON ***/
-    
-    &.orange-test {
-        background: $mbl-bright-orange;
-        color: $mbl-grey-80;
-        
-            &:hover, &:focus {
-                background: $mbl-dark-orange;
-                color: $mbl-grey-50;
-        }
-    }
-     /*** TEST PURPLE BUTTON ***/
-    
-    &.purple-test {
-        background: $mbl-light-purple;
-        color: $mbl-grey-80;
-        
-            &:hover, &:focus {
-                background: $mbl-dark-purple;
-                color: $mbl-grey-50;
-        }
-    }
+    } 
+     
 }
 
 /*** text buttons ***/
@@ -256,4 +224,69 @@ input[type=radio] {
         line-height: 25px;
     }
 }
+
+
+/******  CHECKBOXES ********/
+
+input[type=checkbox] {
+    display: none;
+}
+
+.mbl-checkbox{
+    
+    & label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: $mbl-pad-double-and-half;
+    margin-right: $mbl-pad;
+    font-size: $mbl-font-large;
+    font-family: $mbl-font-secondary;
+    
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            position: absolute;
+            left: 0;
+            bottom: 1px;
+            background-color: $mbl-grey-20;
+        }
+    }
+    
+    &:hover label{
+        color: $mbl-util-neutral;
+        transition: all 0.2s ease;
+    }
+    
+    /*** Disabled checkbox button ***/
+    
+    &.disabled{
+        & label{
+            color: $mbl-grey-20;
+            
+            &::before{
+                background-color: $mbl-grey-20;
+            }
+        }
+        
+        &:hover label{
+            cursor: default;
+            color: $mbl-grey-20;
+            transition: none;
+        }
+    }
+    
+    & input[type=checkbox]:checked + label:before {
+        content: "\2714";
+        color: $mbl-brand-green;
+        font-size: 40px;
+        text-align: center;
+        line-height: 25px;
+    }
+}
+
+
 
