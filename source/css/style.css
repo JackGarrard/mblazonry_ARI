@@ -18,7 +18,7 @@
 *
 * COMPONENTS...............Styles specific to components
 * buttons..................Styles specific to all buttons
-* forms....................Styles specific to all form elements
+* fields...................Styles specific to all input fields, etc.
 * 
 */
 /*.....................................
@@ -303,6 +303,50 @@ a {
     .mbl-text-btn.caution:hover, .mbl-text-btn.caution:focus {
       color: #ffcc66; }
 
+/*** Radio button ***/
+input[type=radio] {
+  display: none; }
+
+.mbl-radio-btn {
+  /*** Disabled radio button ***/ }
+  .mbl-radio-btn label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 2.5em;
+    margin-right: 1em;
+    font-size: 1.25rem;
+    font-family: "Nunito", sans-serif; }
+    .mbl-radio-btn label::before {
+      content: "";
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      position: absolute;
+      left: 0;
+      bottom: 1px;
+      background-color: #006699;
+      border-radius: 50%; }
+  .mbl-radio-btn:hover label {
+    color: #006699;
+    transition: all 0.2s ease; }
+  .mbl-radio-btn.disabled label {
+    color: #cdcdcd; }
+    .mbl-radio-btn.disabled label::before {
+      background-color: #999999; }
+  .mbl-radio-btn.disabled:hover label {
+    cursor: default;
+    color: #cdcdcd;
+    transition: none; }
+
+input[type=radio]:checked + label:before {
+  content: "\2022";
+  color: #e5e5e5;
+  font-size: 40px;
+  text-align: center;
+  line-height: 25px; }
+
 /*.........................
   Mblazonry form styles
 .........................*/
@@ -426,47 +470,3 @@ a {
     outline: 2px solid #006699;
     outline-style: none;
     box-shadow: none; }
-
-/*** Radio button ***/
-input[type=radio] {
-  display: none; }
-
-.mbl-radio-btn {
-  /*** Disabled radio button ***/ }
-  .mbl-radio-btn label {
-    display: inline-block;
-    cursor: pointer;
-    position: relative;
-    padding-left: 2.5em;
-    margin-right: 1em;
-    font-size: 1.25rem;
-    font-family: "Nunito", sans-serif; }
-    .mbl-radio-btn label::before {
-      content: "";
-      display: inline-block;
-      width: 30px;
-      height: 30px;
-      margin-right: 10px;
-      position: absolute;
-      left: 0;
-      bottom: 1px;
-      background-color: #006699;
-      border-radius: 50%; }
-  .mbl-radio-btn:hover label {
-    color: #006699;
-    transition: all 0.2s ease; }
-  .mbl-radio-btn.disabled label {
-    color: #cdcdcd; }
-    .mbl-radio-btn.disabled label::before {
-      background-color: #999999; }
-  .mbl-radio-btn.disabled:hover label {
-    cursor: default;
-    color: #cdcdcd;
-    transition: none; }
-
-input[type=radio]:checked + label:before {
-  content: "\2022";
-  color: #e5e5e5;
-  font-size: 40px;
-  text-align: center;
-  line-height: 25px; }
