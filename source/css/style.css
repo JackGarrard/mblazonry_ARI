@@ -431,29 +431,38 @@ a {
 input[type=radio] {
   display: none; }
 
-.mbl-radio-btn label {
-  display: inline-block;
-  cursor: pointer;
-  position: relative;
-  padding-left: 2.5em;
-  margin-right: 1em;
-  font-size: 1.25rem;
-  font-family: "Nunito", sans-serif; }
-  .mbl-radio-btn label::before {
-    content: "";
+.mbl-radio-btn {
+  /*** Disabled radio button ***/ }
+  .mbl-radio-btn label {
     display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 1px;
-    background-color: #006699;
-    border-radius: 50%; }
-
-.mbl-radio-btn:hover label {
-  color: #006699;
-  transition: all 0.2s ease; }
+    cursor: pointer;
+    position: relative;
+    padding-left: 2.5em;
+    margin-right: 1em;
+    font-size: 1.25rem;
+    font-family: "Nunito", sans-serif; }
+    .mbl-radio-btn label::before {
+      content: "";
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      position: absolute;
+      left: 0;
+      bottom: 1px;
+      background-color: #006699;
+      border-radius: 50%; }
+  .mbl-radio-btn:hover label {
+    color: #006699;
+    transition: all 0.2s ease; }
+  .mbl-radio-btn.disabled label {
+    color: #cdcdcd; }
+    .mbl-radio-btn.disabled label::before {
+      background-color: #999999; }
+  .mbl-radio-btn.disabled:hover label {
+    cursor: default;
+    color: #cdcdcd;
+    transition: none; }
 
 input[type=radio]:checked + label:before {
   content: "\2022";
