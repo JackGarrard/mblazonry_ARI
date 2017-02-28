@@ -513,6 +513,11 @@ a {
     font-weight: 700;
     font-size: 1.25rem;
     border-radius: 7px; }
+  .mbl-btn.testb {
+    background-color: fuchsia;
+    font-weight: bold;
+    font-stretch: expanded;
+    padding: 1000px; }
 
 /*** text buttons ***/
 .mbl-text-btn {

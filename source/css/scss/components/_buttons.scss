@@ -83,6 +83,13 @@
         font-size: $mbl-font-large;
         border-radius: $mbl-border-radius-large;
     }
+    
+    &.testb{
+        background-color: fuchsia;
+        font-weight: bold;
+        font-stretch: expanded;
+        padding:1000px;
+    }
 }
 
 /*** text buttons ***/
