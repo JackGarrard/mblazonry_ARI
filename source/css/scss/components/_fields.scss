@@ -10,8 +10,9 @@
     border-style: none;
     border: 2px solid $mbl-util-neutral;
     padding: $mbl-pad-half $mbl-pad;
+    margin: $mbl-margin;
     color: $mbl-grey-black;
-    font-weight: $mbl-font-bold;
+    font-weight: $mbl-font-style-bold;
     font-family: $mbl-font-secondary;
     transition: background 0.2s ease;
     
@@ -75,7 +76,7 @@
 
 .mbl-text-area{
     font-family: $mbl-font-secondary;
-    font-weight: $mbl-font-bold;
+    font-weight: $mbl-font-style-bold;
     color: $mbl-grey-black;
     background: $mbl-grey-white;
     padding: $mbl-pad-half $mbl-pad-double;
@@ -96,7 +97,7 @@
 
 .mbl-select-menu{
     font-family: $mbl-font-secondary;
-    font-weight: $mbl-font-reg;
+    font-weight: $mbl-font-style-reg;
     color: $mbl-grey-black;
     background: $mbl-grey-white;
     padding: $mbl-pad-half $mbl-pad-triple;
@@ -126,8 +127,8 @@
     
     &>.label{
         font-family: $mbl-font-secondary;
-        font-weight: $mbl-font-reg;
-        font-size: $mbl-font-med;
+        font-weight: $mbl-font-style-reg;
+        font-size: $mbl-font-size-med;
     }
 }
 

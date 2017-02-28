@@ -10,8 +10,8 @@
     color: $mbl-grey-white;
 	line-height: 1;
     font-family: $mbl-font-secondary;
-	font-weight: $mbl-font-reg;
-    font-size: $mbl-font-med;
+	font-weight: $mbl-font-style-reg;
+    font-size: $mbl-font-size-med;
 	padding: $mbl-pad $mbl-pad-and-half;
 	border: 0;
 	border-radius: $mbl-border-radius-med;
@@ -72,15 +72,15 @@
     
     &.small {
         padding: $mbl-pad-half;
-        font-size: $mbl-font-small;
+        font-size: $mbl-font-size-small;
     }
     
     /*** large button ***/
     
     &.large {
         padding: $mbl-pad-and-half $mbl-pad-triple;
-        font-weight: $mbl-font-bold;
-        font-size: $mbl-font-large;
+        font-weight: $mbl-font-style-bold;
+        font-size: $mbl-font-size-large;
         border-radius: $mbl-border-radius-large;
     }
 }
@@ -92,8 +92,8 @@
 	background: none;
     border: none;
     font-family: $mbl-font-secondary;
-    font-weight: $mbl-font-bold;
-    font-size: $mbl-font-large;
+    font-weight: $mbl-font-style-bold;
+    font-size: $mbl-font-size-large;
     color: $mbl-util-neutral;
     
     &:after {
@@ -174,8 +174,8 @@ input[type=radio] {
     cursor: pointer;
     position: relative;
     padding-left: $mbl-pad-double-and-half;
-    margin-right: $mbl-pad;
-    font-size: $mbl-font-large;
+    margin: $mbl-margin-quarter;
+    font-size: $mbl-font-size-large;
     font-family: $mbl-font-secondary;
     
         &::before{
@@ -183,7 +183,7 @@ input[type=radio] {
             display: inline-block;
             width: 30px;
             height: 30px;
-            margin-right: 10px;
+            margin-right: $mbl-margin;
             position: absolute;
             left: 0;
             bottom: 1px;

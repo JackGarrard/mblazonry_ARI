@@ -571,7 +571,7 @@ input[type=radio] {
     cursor: pointer;
     position: relative;
     padding-left: 2.5em;
-    margin-right: 1em;
+    margin: 0.25em;
     font-size: 1.25rem;
     font-family: "Nunito", sans-serif; }
     .mbl-radio-btn label::before {
@@ -579,7 +579,7 @@ input[type=radio] {
       display: inline-block;
       width: 30px;
       height: 30px;
-      margin-right: 10px;
+      margin-right: 1em;
       position: absolute;
       left: 0;
       bottom: 1px;
@@ -596,7 +596,7 @@ input[type=radio] {
     cursor: default;
     color: #cdcdcd;
     transition: none; }
-  .mbl-radio-btn input[type=radio]:checked + input[type=radio] > label:before {
+  .mbl-radio-btn input[type=radio]:checked + label:before {
     content: "\2022";
     color: #e5e5e5;
     font-size: 40px;
@@ -613,6 +613,7 @@ input[type=radio] {
   border-style: none;
   border: 2px solid #006699;
   padding: 0.5em 1em;
+  margin: 1em;
   color: #000000;
   font-weight: 700;
   font-family: "Nunito", sans-serif;
