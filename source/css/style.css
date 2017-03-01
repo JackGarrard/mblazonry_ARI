@@ -564,6 +564,7 @@ a {
 /*** Radio button ***/
 input[type=radio] {
   display: none; }
+<<<<<<< HEAD
 
 .mbl-radio-btn {
   /*** Disabled radio button ***/ }
@@ -719,6 +720,122 @@ input[type=checkbox] {
       background: rgba(153, 51, 51, 0.1);
       border-color: #993333; }
 
+=======
+
+.mbl-radio-btn {
+  /*** Disabled radio button ***/ }
+  .mbl-radio-btn label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 2.5em;
+    margin: 0.25em;
+    font-size: 1.25rem;
+    font-family: "Nunito", sans-serif; }
+    .mbl-radio-btn label::before {
+      content: "";
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin-right: 1em;
+      position: absolute;
+      left: 0;
+      bottom: 1px;
+      background-color: #006699;
+      border-radius: 50%; }
+  .mbl-radio-btn:hover label {
+    color: #006699;
+    transition: all 0.2s ease; }
+  .mbl-radio-btn.disabled label {
+    color: #cdcdcd; }
+    .mbl-radio-btn.disabled label::before {
+      background-color: #999999; }
+  .mbl-radio-btn.disabled:hover label {
+    cursor: default;
+    color: #cdcdcd;
+    transition: none; }
+  .mbl-radio-btn input[type=radio]:checked + label:before {
+    content: "\2022";
+    color: #e5e5e5;
+    font-size: 40px;
+    text-align: center;
+    line-height: 25px; }
+
+/*.........................
+  Mblazonry field styles
+.........................*/
+/*** text inputs ***/
+.mbl-text-input {
+  background: #ffffff;
+  border-radius: 5px;
+  border-style: none;
+  border: 2px solid #006699;
+  padding: 0.5em 1em;
+  margin: 1em;
+  color: #000000;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  transition: background 0.2s ease;
+  /*** diasabled text input ***/
+  /*** positive text input ***/
+  /*** caution text input ***/
+  /*** negative text input ***/ }
+  .mbl-text-input::-webkit-input-placeholder {
+    color: #b3b3b3; }
+  .mbl-text-input:-moz-placeholder {
+    color: #b3b3b3; }
+  .mbl-text-input::-moz-placeholder {
+    color: #b3b3b3; }
+  .mbl-text-input:-ms-input-placeholder {
+    color: #b3b3b3; }
+  .mbl-text-input:hover, .mbl-text-input:focus {
+    background: rgba(51, 153, 255, 0.1);
+    border-color: #3399ff; }
+    .mbl-text-input:hover::-webkit-input-placeholder, .mbl-text-input:focus::-webkit-input-placeholder {
+      color: #808080; }
+    .mbl-text-input:hover:-moz-placeholder, .mbl-text-input:focus:-moz-placeholder {
+      color: #808080; }
+    .mbl-text-input:hover::-moz-placeholder, .mbl-text-input:focus::-moz-placeholder {
+      color: #808080; }
+    .mbl-text-input:hover:-ms-input-placeholder, .mbl-text-input:focus:-ms-input-placeholder {
+      color: #808080; }
+  .mbl-text-input.disabled {
+    background: #e5e5e5;
+    border-color: #cdcdcd;
+    transition: none; }
+    .mbl-text-input.disabled::-webkit-input-placeholder {
+      color: #cdcdcd; }
+    .mbl-text-input.disabled:-moz-placeholder {
+      color: #cdcdcd; }
+    .mbl-text-input.disabled::-moz-placeholder {
+      color: #cdcdcd; }
+    .mbl-text-input.disabled:-ms-input-placeholder {
+      color: #cdcdcd; }
+    .mbl-text-input.disabled:hover::-webkit-input-placeholder, .mbl-text-input.disabled:focus::-webkit-input-placeholder {
+      color: #cdcdcd; }
+    .mbl-text-input.disabled:hover:-moz-placeholder, .mbl-text-input.disabled:focus:-moz-placeholder {
+      color: #cdcdcd; }
+    .mbl-text-input.disabled:hover::-moz-placeholder, .mbl-text-input.disabled:focus::-moz-placeholder {
+      color: #cdcdcd; }
+    .mbl-text-input.disabled:hover:-ms-input-placeholder, .mbl-text-input.disabled:focus:-ms-input-placeholder {
+      color: #cdcdcd; }
+  .mbl-text-input.positive {
+    border-color: #006600; }
+    .mbl-text-input.positive:hover, .mbl-text-input.positive:focus {
+      background: rgba(0, 153, 102, 0.1);
+      border-color: #009966; }
+  .mbl-text-input.caution {
+    border-color: #ffcc00; }
+    .mbl-text-input.caution:hover, .mbl-text-input.caution:focus {
+      background: rgba(255, 204, 102, 0.1);
+      border-color: #ffcc66; }
+  .mbl-text-input.negative {
+    border-color: #cc0000; }
+    .mbl-text-input.negative:hover, .mbl-text-input.negative:focus {
+      background: rgba(153, 51, 51, 0.1);
+      border-color: #993333; }
+
+>>>>>>> jackFeature
 /*** Text area ***/
 .mbl-text-area {
   font-family: "Nunito", sans-serif;
@@ -781,3 +898,9 @@ input[type=checkbox] {
 /*.........................
   Mblazonry field styles
 .........................*/
+<<<<<<< HEAD
+=======
+.mbl-form-test-feb27 {
+  border: 2xp solid #006699;
+  border-radius: 3px; }
+>>>>>>> jackFeature

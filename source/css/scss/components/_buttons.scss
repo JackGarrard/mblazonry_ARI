@@ -10,8 +10,13 @@
     color: $mbl-grey-white;
 	line-height: 1;
     font-family: $mbl-font-secondary;
+<<<<<<< HEAD
 	font-weight: $mbl-font-reg;
     font-size: $mbl-font-med;
+=======
+	font-weight: $mbl-font-style-reg;
+    font-size: $mbl-font-size-med;
+>>>>>>> jackFeature
 	padding: $mbl-pad $mbl-pad-and-half;
 	border: 0;
 	border-radius: $mbl-border-radius-med;
@@ -72,18 +77,29 @@
     
     &.small {
         padding: $mbl-pad-half;
+<<<<<<< HEAD
         font-size: $mbl-font-small;
+=======
+        font-size: $mbl-font-size-small;
+>>>>>>> jackFeature
     }
     
     /*** large button ***/
     
     &.large {
         padding: $mbl-pad-and-half $mbl-pad-triple;
+<<<<<<< HEAD
         font-weight: $mbl-font-bold;
         font-size: $mbl-font-large;
         border-radius: $mbl-border-radius-large;
     } 
      
+=======
+        font-weight: $mbl-font-style-bold;
+        font-size: $mbl-font-size-large;
+        border-radius: $mbl-border-radius-large;
+    }
+>>>>>>> jackFeature
 }
 
 /*** text buttons ***/
@@ -93,8 +109,13 @@
 	background: none;
     border: none;
     font-family: $mbl-font-secondary;
+<<<<<<< HEAD
     font-weight: $mbl-font-bold;
     font-size: $mbl-font-large;
+=======
+    font-weight: $mbl-font-style-bold;
+    font-size: $mbl-font-size-large;
+>>>>>>> jackFeature
     color: $mbl-util-neutral;
     
     &:after {
@@ -175,8 +196,13 @@ input[type=radio] {
     cursor: pointer;
     position: relative;
     padding-left: $mbl-pad-double-and-half;
+<<<<<<< HEAD
     margin-right: $mbl-pad;
     font-size: $mbl-font-large;
+=======
+    margin: $mbl-margin-quarter;
+    font-size: $mbl-font-size-large;
+>>>>>>> jackFeature
     font-family: $mbl-font-secondary;
     
         &::before{
@@ -184,7 +210,11 @@ input[type=radio] {
             display: inline-block;
             width: 30px;
             height: 30px;
+<<<<<<< HEAD
             margin-right: 10px;
+=======
+            margin-right: $mbl-margin;
+>>>>>>> jackFeature
             position: absolute;
             left: 0;
             bottom: 1px;
@@ -225,6 +255,7 @@ input[type=radio] {
     }
 }
 
+<<<<<<< HEAD
 
 /******  CHECKBOXES ********/
 
@@ -290,3 +321,5 @@ input[type=checkbox] {
 
 
 
+=======
+>>>>>>> jackFeature
