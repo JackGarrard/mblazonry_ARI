@@ -90,28 +90,28 @@
 }
 
 .mbl-font-weight-reg{
-    font-weight: $mbl-font-reg;
+    font-weight: $mbl-font-style-reg;
 }
 
 .mbl-font-weight-ital{
-    font-weight: $mbl-font-reg;
+    font-weight: $mbl-font-style-reg;
     font-style: italic;
 }
 
 .mbl-font-weight-bold{
-    font-weight: $mbl-font-bold;
+    font-weight: $mbl-font-style-bold;
 }
 
 .mbl-font-small{
-    font-size: $mbl-font-small;
+    font-size: $mbl-font-size-small;
 }
 
 .mbl-font-med{
-    font-size: $mbl-font-med;
+    font-size: $mbl-font-size-med;
 }
 
 .mbl-font-large{
-    font-size: $mbl-font-large;
+    font-size: $mbl-font-size-large;
 }
 
 /*.........................
