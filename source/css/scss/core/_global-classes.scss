@@ -2,9 +2,12 @@
     Global classes
 .........................*/
 
+
 /*** Clearfix ***/
 
+
 /* These classes are based on the micro clearfix hack by Nicholas Gallagher - http://nicolasgallagher.com/micro-clearfix-hack/ */
+
 
 /**
  * For modern browsers
@@ -18,240 +21,253 @@
 
 .cf:before,
 .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
 }
 
 .cf:after {
-    clear: both;
+  clear: both;
 }
+
 
 /**
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
+
 .cf {
-    *zoom: 1;
+  *zoom: 1;
 }
+
 
 /*** Hidden ***/
 
-.is-hidden{
-    display: none !important;
-    visibility: hidden !important;
+.is-hidden {
+  display: none !important;
+  visibility: hidden !important;
 }
+
 
 /*.........................
     Alignment
 .........................*/
 
-.align-right{
-    text-align: right;
+.align-right {
+  text-align: right;
 }
 
-.align-center{
-    text-align: center;
+.align-center {
+  text-align: center;
 }
 
-.align-left{
-    text-align: left;
+.align-left {
+  text-align: left;
 }
+
 
 /*.........................
     Feedback colours
 .........................*/
 
-.mbl-valid{
-    color: $mbl-util-positive;
-} 
-
-.mbl-warning{
-    color: $mbl-util-caution;
-} 
-
-.mbl-error{
-    color: $mbl-util-negative;
-} 
-
-.mbl-neutral{
-    color: $mbl-util-neutral;
+.mbl-valid {
+  color: $mbl-util-positive;
 }
+
+.mbl-warning {
+  color: $mbl-util-caution;
+}
+
+.mbl-error {
+  color: $mbl-util-negative;
+}
+
+.mbl-neutral {
+  color: $mbl-util-neutral;
+}
+
 
 /*.........................
     Fonts
 .........................*/
 
-.mbl-font-primary{
-    font-family: $mbl-font-primary;
+.mbl-font-primary {
+  font-family: $mbl-font-primary;
 }
 
-.mbl-font-secondary{
-    font-family: $mbl-font-secondary;
+.mbl-font-secondary {
+  font-family: $mbl-font-secondary;
 }
 
-.mbl-font-weight-reg{
-    font-weight: $mbl-font-reg;
+.mbl-font-weight-reg {
+  font-weight: $mbl-font-reg;
 }
 
-.mbl-font-weight-ital{
-    font-weight: $mbl-font-reg;
-    font-style: italic;
+.mbl-font-weight-ital {
+  font-weight: $mbl-font-reg;
+  font-style: italic;
 }
 
-.mbl-font-weight-bold{
-    font-weight: $mbl-font-bold;
+.mbl-font-weight-bold {
+  font-weight: $mbl-font-bold;
 }
 
-.mbl-font-small{
-    font-size: $mbl-font-small;
+.mbl-font-small {
+  font-size: $mbl-font-small;
 }
 
-.mbl-font-med{
-    font-size: $mbl-font-med;
+.mbl-font-med {
+  font-size: $mbl-font-med;
 }
 
-.mbl-font-large{
-    font-size: $mbl-font-large;
+.mbl-font-large {
+  font-size: $mbl-font-large;
 }
+
 
 /*.........................
     Floats
 .........................*/
 
-.float-left{
-    float: left;
+.float-left {
+  float: left;
 }
 
-.float-right{
-    float: right;
+.float-right {
+  float: right;
 }
+
 
 /*.........................
     Padding
 .........................*/
 
-.mbl-pad{
-    padding: $mbl-pad;
+.mbl-pad {
+  padding: $mbl-pad;
 }
 
-.mbl-pad-and-half{
-    padding: $mbl-pad-and-half;
+.mbl-pad-and-half {
+  padding: $mbl-pad-and-half;
 }
 
-.mbl-pad-double{
-    padding: $mbl-pad-double;
+.mbl-pad-double {
+  padding: $mbl-pad-double;
 }
 
-.mbl-pad-double-and-half{
-    padding: $mbl-pad-double-and-half;
+.mbl-pad-double-and-half {
+  padding: $mbl-pad-double-and-half;
 }
 
-.mbl-pad-triple{
-    padding: $mbl-pad-triple;
+.mbl-pad-triple {
+  padding: $mbl-pad-triple;
 }
 
-.mbl-pad-half{
-    padding: $mbl-pad-half;
+.mbl-pad-half {
+  padding: $mbl-pad-half;
 }
 
-.mbl-pad-quarter{
-    padding: $mbl-pad-quarter;
+.mbl-pad-quarter {
+  padding: $mbl-pad-quarter;
 }
+
 
 /*.........................
     Padding right
 .........................*/
 
-.mbl-pad-right{
-    padding-right: $mbl-pad;
+.mbl-pad-right {
+  padding-right: $mbl-pad;
 }
 
-.mbl-pad-and-half-right{
-    padding-right: $mbl-pad-and-half;
+.mbl-pad-and-half-right {
+  padding-right: $mbl-pad-and-half;
 }
 
-.mbl-pad-double-right{
-    padding-right: $mbl-pad-double;
+.mbl-pad-double-right {
+  padding-right: $mbl-pad-double;
 }
 
-.mbl-pad-double-and-half-right{
-    padding-right: $mbl-pad-double-and-half;
+.mbl-pad-double-and-half-right {
+  padding-right: $mbl-pad-double-and-half;
 }
 
-.mbl-pad-triple-right{
-    padding-right: $mbl-pad-triple;
+.mbl-pad-triple-right {
+  padding-right: $mbl-pad-triple;
 }
 
-.mbl-pad-half-right{
-    padding-right: $mbl-pad-half;
+.mbl-pad-half-right {
+  padding-right: $mbl-pad-half;
 }
 
-.mbl-pad-quarter-right{
-    padding-right: $mbl-pad-quarter;
+.mbl-pad-quarter-right {
+  padding-right: $mbl-pad-quarter;
 }
+
 
 /*.........................
     Padding Left
 .........................*/
 
-.mbl-pad-left{
-    padding-left: $mbl-pad;
+.mbl-pad-left {
+  padding-left: $mbl-pad;
 }
 
-.mbl-pad-and-half-left{
-    padding-left: $mbl-pad-and-half;
+.mbl-pad-and-half-left {
+  padding-left: $mbl-pad-and-half;
 }
 
-.mbl-pad-double-left{
-    padding-left: $mbl-pad-double;
+.mbl-pad-double-left {
+  padding-left: $mbl-pad-double;
 }
 
-.mbl-pad-double-and-half-left{
-    padding-left: $mbl-pad-double-and-half;
+.mbl-pad-double-and-half-left {
+  padding-left: $mbl-pad-double-and-half;
 }
 
-.mbl-pad-triple-left{
-    padding-left: $mbl-pad-triple;
+.mbl-pad-triple-left {
+  padding-left: $mbl-pad-triple;
 }
 
-.mbl-pad-half-left{
-    padding-left: $mbl-pad-half;
+.mbl-pad-half-left {
+  padding-left: $mbl-pad-half;
 }
 
-.mbl-pad-quarter-left{
-    padding-left: $mbl-pad-quarter;
+.mbl-pad-quarter-left {
+  padding-left: $mbl-pad-quarter;
 }
+
 
 /*.........................
     Padding Top
 .........................*/
 
-.mbl-pad-top{
-    padding-top: $mbl-pad;
+.mbl-pad-top {
+  padding-top: $mbl-pad;
 }
 
-.mbl-pad-and-half-top{
-    padding-top: $mbl-pad-and-half;
+.mbl-pad-and-half-top {
+  padding-top: $mbl-pad-and-half;
 }
 
-.mbl-pad-double-top{
-    padding-top: $mbl-pad-double;
+.mbl-pad-double-top {
+  padding-top: $mbl-pad-double;
 }
 
-.mbl-pad-double-and-half-top{
-    padding-top: $mbl-pad-double-and-half;
+.mbl-pad-double-and-half-top {
+  padding-top: $mbl-pad-double-and-half;
 }
 
-.mbl-pad-triple-top{
-    padding-top: $mbl-pad-triple;
+.mbl-pad-triple-top {
+  padding-top: $mbl-pad-triple;
 }
 
-.mbl-pad-half-top{
-    padding-top: $mbl-pad-half;
+.mbl-pad-half-top {
+  padding-top: $mbl-pad-half;
 }
 
-.mbl-pad-quarter-top{
-    padding-top: $mbl-pad-quarter;
+.mbl-pad-quarter-top {
+  padding-top: $mbl-pad-quarter;
 }
 
 
@@ -259,160 +275,164 @@
     Padding Bottom
 .........................*/
 
-.mbl-pad-bottom{
-    padding-bottom: $mbl-pad;
+.mbl-pad-bottom {
+  padding-bottom: $mbl-pad;
 }
 
-.mbl-pad-and-half-bottom{
-    padding-bottom: $mbl-pad-and-half;
+.mbl-pad-and-half-bottom {
+  padding-bottom: $mbl-pad-and-half;
 }
 
-.mbl-pad-double-bottom{
-    padding-bottom: $mbl-pad-double;
+.mbl-pad-double-bottom {
+  padding-bottom: $mbl-pad-double;
 }
 
-.mbl-pad-double-and-half-bottom{
-    padding-bottom: $mbl-pad-double-and-half;
+.mbl-pad-double-and-half-bottom {
+  padding-bottom: $mbl-pad-double-and-half;
 }
 
-.mbl-pad-triple-bottom{
-    padding-bottom: $mbl-pad-triple;
+.mbl-pad-triple-bottom {
+  padding-bottom: $mbl-pad-triple;
 }
 
-.mbl-pad-half-bottom{
-    padding-bottom: $mbl-pad-half;
+.mbl-pad-half-bottom {
+  padding-bottom: $mbl-pad-half;
 }
 
-.mbl-pad-quarter-bottom{
-    padding-bottom: $mbl-pad-quarter;
+.mbl-pad-quarter-bottom {
+  padding-bottom: $mbl-pad-quarter;
 }
+
 
 /*.........................
     Margin
 .........................*/
 
-.mbl-margin{
-    margin: $mbl-margin;
+.mbl-margin {
+  margin: $mbl-margin;
 }
 
-.mbl-margin-and-half{
-    margin: $mbl-margin-and-half;
+.mbl-margin-and-half {
+  margin: $mbl-margin-and-half;
 }
 
-.mbl-margin-double{
-    margin: $mbl-margin-double;
+.mbl-margin-double {
+  margin: $mbl-margin-double;
 }
 
-.mbl-margin-double-and-half{
-    margin: $mbl-margin-double-and-half;
+.mbl-margin-double-and-half {
+  margin: $mbl-margin-double-and-half;
 }
 
-.mbl-margin-triple{
-    margin: $mbl-margin-triple;
+.mbl-margin-triple {
+  margin: $mbl-margin-triple;
 }
 
-.mbl-margin-half{
-    margin: $mbl-margin-half;
+.mbl-margin-half {
+  margin: $mbl-margin-half;
 }
 
-.mbl-margin-quarter{
-    margin: $mbl-margin-quarter;
+.mbl-margin-quarter {
+  margin: $mbl-margin-quarter;
 }
+
 
 /*.........................
     Margin right
 .........................*/
 
-.mbl-margin-right{
-    margin-right: $mbl-margin;
+.mbl-margin-right {
+  margin-right: $mbl-margin;
 }
 
-.mbl-margin-and-half-right{
-    margin-right: $mbl-margin-and-half;
+.mbl-margin-and-half-right {
+  margin-right: $mbl-margin-and-half;
 }
 
-.mbl-margin-double-right{
-    margin-right: $mbl-margin-double;
+.mbl-margin-double-right {
+  margin-right: $mbl-margin-double;
 }
 
-.mbl-margin-double-and-half-right{
-    margin-right: $mbl-margin-double-and-half;
+.mbl-margin-double-and-half-right {
+  margin-right: $mbl-margin-double-and-half;
 }
 
-.mbl-margin-triple-right{
-    margin-right: $mbl-margin-triple;
+.mbl-margin-triple-right {
+  margin-right: $mbl-margin-triple;
 }
 
-.mbl-margin-half-right{
-    margin-right: $mbl-margin-half;
+.mbl-margin-half-right {
+  margin-right: $mbl-margin-half;
 }
 
-.mbl-margin-quarter-right{
-    margin-right: $mbl-margin-quarter;
+.mbl-margin-quarter-right {
+  margin-right: $mbl-margin-quarter;
 }
+
 
 /*.........................
     Margin Left
 .........................*/
 
-.mbl-margin-left{
-    margin-left: $mbl-margin;
+.mbl-margin-left {
+  margin-left: $mbl-margin;
 }
 
-.mbl-margin-and-half-left{
-    margin-left: $mbl-margin-and-half;
+.mbl-margin-and-half-left {
+  margin-left: $mbl-margin-and-half;
 }
 
-.mbl-margin-double-left{
-    margin-left: $mbl-margin-double;
+.mbl-margin-double-left {
+  margin-left: $mbl-margin-double;
 }
 
-.mbl-margin-double-and-half-left{
-    margin-left: $mbl-margin-double-and-half;
+.mbl-margin-double-and-half-left {
+  margin-left: $mbl-margin-double-and-half;
 }
 
-.mbl-margin-triple-left{
-    margin-left: $mbl-margin-triple;
+.mbl-margin-triple-left {
+  margin-left: $mbl-margin-triple;
 }
 
-.mbl-margin-half-left{
-    margin-left: $mbl-margin-half;
+.mbl-margin-half-left {
+  margin-left: $mbl-margin-half;
 }
 
-.mbl-margin-quarter-left{
-    margin-left: $mbl-margin-quarter;
+.mbl-margin-quarter-left {
+  margin-left: $mbl-margin-quarter;
 }
+
 
 /*.........................
     Margin Top
 .........................*/
 
-.mbl-margin-top{
-    margin-top: $mbl-margin;
+.mbl-margin-top {
+  margin-top: $mbl-margin;
 }
 
-.mbl-margin-and-half-top{
-    margin-top: $mbl-margin-and-half;
+.mbl-margin-and-half-top {
+  margin-top: $mbl-margin-and-half;
 }
 
-.mbl-margin-double-top{
-    margin-top: $mbl-margin-double;
+.mbl-margin-double-top {
+  margin-top: $mbl-margin-double;
 }
 
-.mbl-margin-double-and-half-top{
-    margin-top: $mbl-margin-double-and-half;
+.mbl-margin-double-and-half-top {
+  margin-top: $mbl-margin-double-and-half;
 }
 
-.mbl-margin-triple-top{
-    margin-top: $mbl-margin-triple;
+.mbl-margin-triple-top {
+  margin-top: $mbl-margin-triple;
 }
 
-.mbl-margin-half-top{
-    margin-top: $mbl-margin-half;
+.mbl-margin-half-top {
+  margin-top: $mbl-margin-half;
 }
 
-.mbl-margin-quarter-top{
-    margin-top: $mbl-margin-quarter;
+.mbl-margin-quarter-top {
+  margin-top: $mbl-margin-quarter;
 }
 
 
@@ -420,30 +440,30 @@
     Margin Bottom
 .........................*/
 
-.mbl-margin-bottom{
-    margin-bottom: $mbl-margin;
+.mbl-margin-bottom {
+  margin-bottom: $mbl-margin;
 }
 
-.mbl-margin-and-half-bottom{
-    margin-bottom: $mbl-margin-and-half;
+.mbl-margin-and-half-bottom {
+  margin-bottom: $mbl-margin-and-half;
 }
 
-.mbl-margin-double-bottom{
-    margin-bottom: $mbl-margin-double;
+.mbl-margin-double-bottom {
+  margin-bottom: $mbl-margin-double;
 }
 
-.mbl-margin-double-and-half-bottom{
-    margin-bottom: $mbl-margin-double-and-half;
+.mbl-margin-double-and-half-bottom {
+  margin-bottom: $mbl-margin-double-and-half;
 }
 
-.mbl-margin-triple-bottom{
-    margin-bottom: $mbl-margin-triple;
+.mbl-margin-triple-bottom {
+  margin-bottom: $mbl-margin-triple;
 }
 
-.mbl-margin-half-bottom{
-    margin-bottom: $mbl-margin-half;
+.mbl-margin-half-bottom {
+  margin-bottom: $mbl-margin-half;
 }
 
-.mbl-margin-quarter-bottom{
-    margin-bottom: $mbl-margin-quarter;
+.mbl-margin-quarter-bottom {
+  margin-bottom: $mbl-margin-quarter;
 }

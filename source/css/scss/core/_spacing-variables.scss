@@ -2,40 +2,39 @@
     Spacing Variables
 .........................*/
 
+
 /*** Spacing ***/
 
-$mbl-space : 1em;
-$mbl-space-and-half : $mbl-space*1.5;
-$mbl-space-double : $mbl-space*2;
-$mbl-space-quad : $mbl-space*4;
-$mbl-space-half : $mbl-space/2;
+$mbl-space: 1em;
+$mbl-space-and-half: $mbl-space*1.5;
+$mbl-space-double: $mbl-space*2;
+$mbl-space-quad: $mbl-space*4;
+$mbl-space-half: $mbl-space/2;
 
 /*** Padding ***/
 
-$mbl-pad : 1em;
-$mbl-pad-and-half : $mbl-pad*1.5;
-$mbl-pad-double : $mbl-pad*2;
+$mbl-pad: 1em;
+$mbl-pad-and-half: $mbl-pad*1.5;
+$mbl-pad-double: $mbl-pad*2;
 $mbl-pad-double-and-half: $mbl-pad*2.5;
-$mbl-pad-triple : $mbl-pad*3;
-$mbl-pad-half : $mbl-pad/2;
-$mbl-pad-quarter :$mbl-pad/4;
+$mbl-pad-triple: $mbl-pad*3;
+$mbl-pad-half: $mbl-pad/2;
+$mbl-pad-quarter:$mbl-pad/4;
 
 /*** Margin ***/
 
-$mbl-margin : 1em;
-$mbl-margin-and-half : $mbl-margin*1.5;
-$mbl-margin-double : $mbl-margin*2;
+$mbl-margin: 1em;
+$mbl-margin-and-half: $mbl-margin*1.5;
+$mbl-margin-double: $mbl-margin*2;
 $mbl-margin-double-and-half: $mbl-margin*2.5;
-$mbl-margin-triple : $mbl-margin*3;
-$mbl-margin-half : $mbl-margin/2;
-$mbl-margin-quarter :$mbl-margin/4;
+$mbl-margin-triple: $mbl-margin*3;
+$mbl-margin-half: $mbl-margin/2;
+$mbl-margin-quarter:$mbl-margin/4;
 
 /*** Borders ***/
 
 $mbl-border-sm: 3px;
 $mbl-border-lg: 7px;
-
 $mbl-border-radius-small: 3px;
 $mbl-border-radius-med: 5px;
 $mbl-border-radius-large: 7px;
-
