@@ -2,6 +2,7 @@
     Colour variables
 .........................*/
 
+
 /*** mblazonry brand colours ***/
 
 $mbl-brand-green: #45A840;
@@ -24,109 +25,98 @@ $mbl-grey-white: #ffffff;
 
 /*** Utilities ***/
 
+
 /*** Utility classes are used to provide feedback to users, such as in alert messages, form validation, etc. ***/
 
 
 /*** utility positive ***/
 
 $mbl-util-positive: #006600;
-
-$mbl-util-positive-dim90: transparentize( $mbl-util-positive, 0.1 );
+$mbl-util-positive-dim90: transparentize( $mbl-util-positive, 0.1);
 $mbl-util-positive-dim80: transparentize( $mbl-util-positive, 0.2);
-$mbl-util-positive-dim70: transparentize( $mbl-util-positive, 0.3 );
-$mbl-util-positive-dim60: transparentize( $mbl-util-positive, 0.4 );
-$mbl-util-positive-dim50: transparentize( $mbl-util-positive, 0.5 );
-$mbl-util-positive-dim40: transparentize( $mbl-util-positive, 0.6 );
-$mbl-util-positive-dim30: transparentize( $mbl-util-positive, 0.7 );
-$mbl-util-positive-dim20: transparentize( $mbl-util-positive, 0.8 );
-$mbl-util-positive-dim10: transparentize( $mbl-util-positive, 0.9 );
-
+$mbl-util-positive-dim70: transparentize( $mbl-util-positive, 0.3);
+$mbl-util-positive-dim60: transparentize( $mbl-util-positive, 0.4);
+$mbl-util-positive-dim50: transparentize( $mbl-util-positive, 0.5);
+$mbl-util-positive-dim40: transparentize( $mbl-util-positive, 0.6);
+$mbl-util-positive-dim30: transparentize( $mbl-util-positive, 0.7);
+$mbl-util-positive-dim20: transparentize( $mbl-util-positive, 0.8);
+$mbl-util-positive-dim10: transparentize( $mbl-util-positive, 0.9);
 $mbl-util-positive-subtle: #009966;
-
-$mbl-util-positive-subtle-dim90: transparentize( $mbl-util-positive-subtle, 0.1 );
-$mbl-util-positive-subtle-dim80: transparentize( $mbl-util-positive-subtle, 0.2 );
-$mbl-util-positive-subtle-dim70: transparentize( $mbl-util-positive-subtle, 0.3 );
-$mbl-util-positive-subtle-dim60: transparentize( $mbl-util-positive-subtle, 0.4 );
-$mbl-util-positive-subtle-dim50: transparentize( $mbl-util-positive-subtle, 0.5 );
-$mbl-util-positive-subtle-dim40: transparentize( $mbl-util-positive-subtle, 0.6 );
-$mbl-util-positive-subtle-dim30: transparentize( $mbl-util-positive-subtle, 0.7 );
-$mbl-util-positive-subtle-dim20: transparentize( $mbl-util-positive-subtle, 0.8 );
-$mbl-util-positive-subtle-dim10: transparentize( $mbl-util-positive-subtle, 0.9 );
+$mbl-util-positive-subtle-dim90: transparentize( $mbl-util-positive-subtle, 0.1);
+$mbl-util-positive-subtle-dim80: transparentize( $mbl-util-positive-subtle, 0.2);
+$mbl-util-positive-subtle-dim70: transparentize( $mbl-util-positive-subtle, 0.3);
+$mbl-util-positive-subtle-dim60: transparentize( $mbl-util-positive-subtle, 0.4);
+$mbl-util-positive-subtle-dim50: transparentize( $mbl-util-positive-subtle, 0.5);
+$mbl-util-positive-subtle-dim40: transparentize( $mbl-util-positive-subtle, 0.6);
+$mbl-util-positive-subtle-dim30: transparentize( $mbl-util-positive-subtle, 0.7);
+$mbl-util-positive-subtle-dim20: transparentize( $mbl-util-positive-subtle, 0.8);
+$mbl-util-positive-subtle-dim10: transparentize( $mbl-util-positive-subtle, 0.9);
 
 /*** utility neutral ***/
 
 $mbl-util-neutral: #006699;
-
-$mbl-util-neutral-dim90: transparentize( $mbl-util-neutral, 0.1 );
-$mbl-util-neutral-dim80: transparentize( $mbl-util-neutral, 0.2 );
-$mbl-util-neutral-dim70: transparentize( $mbl-util-neutral, 0.3 );
-$mbl-util-neutral-dim60: transparentize( $mbl-util-neutral, 0.4 );
-$mbl-util-neutral-dim50: transparentize( $mbl-util-neutral, 0.5 );
-$mbl-util-neutral-dim40: transparentize( $mbl-util-neutral, 0.6 );
-$mbl-util-neutral-dim30: transparentize( $mbl-util-neutral, 0.7 );
-$mbl-util-neutral-dim20: transparentize( $mbl-util-neutral, 0.8 );
-$mbl-util-neutral-dim10: transparentize( $mbl-util-neutral, 0.9 );
-
+$mbl-util-neutral-dim90: transparentize( $mbl-util-neutral, 0.1);
+$mbl-util-neutral-dim80: transparentize( $mbl-util-neutral, 0.2);
+$mbl-util-neutral-dim70: transparentize( $mbl-util-neutral, 0.3);
+$mbl-util-neutral-dim60: transparentize( $mbl-util-neutral, 0.4);
+$mbl-util-neutral-dim50: transparentize( $mbl-util-neutral, 0.5);
+$mbl-util-neutral-dim40: transparentize( $mbl-util-neutral, 0.6);
+$mbl-util-neutral-dim30: transparentize( $mbl-util-neutral, 0.7);
+$mbl-util-neutral-dim20: transparentize( $mbl-util-neutral, 0.8);
+$mbl-util-neutral-dim10: transparentize( $mbl-util-neutral, 0.9);
 $mbl-util-neutral-subtle: #3399ff;
-
-$mbl-util-neutral-subtle-dim90: transparentize( $mbl-util-neutral-subtle, 0.1 );
-$mbl-util-neutral-subtle-dim80: transparentize( $mbl-util-neutral-subtle, 0.2 );
-$mbl-util-neutral-subtle-dim70: transparentize( $mbl-util-neutral-subtle, 0.3 );
-$mbl-util-neutral-subtle-dim60: transparentize( $mbl-util-neutral-subtle, 0.4 );
-$mbl-util-neutral-subtle-dim50: transparentize( $mbl-util-neutral-subtle, 0.5 );
-$mbl-util-neutral-subtle-dim40: transparentize( $mbl-util-neutral-subtle, 0.6 );
-$mbl-util-neutral-subtle-dim30: transparentize( $mbl-util-neutral-subtle, 0.7 );
-$mbl-util-neutral-subtle-dim20: transparentize( $mbl-util-neutral-subtle, 0.8 );
-$mbl-util-neutral-subtle-dim10: transparentize( $mbl-util-neutral-subtle, 0.9 );
+$mbl-util-neutral-subtle-dim90: transparentize( $mbl-util-neutral-subtle, 0.1);
+$mbl-util-neutral-subtle-dim80: transparentize( $mbl-util-neutral-subtle, 0.2);
+$mbl-util-neutral-subtle-dim70: transparentize( $mbl-util-neutral-subtle, 0.3);
+$mbl-util-neutral-subtle-dim60: transparentize( $mbl-util-neutral-subtle, 0.4);
+$mbl-util-neutral-subtle-dim50: transparentize( $mbl-util-neutral-subtle, 0.5);
+$mbl-util-neutral-subtle-dim40: transparentize( $mbl-util-neutral-subtle, 0.6);
+$mbl-util-neutral-subtle-dim30: transparentize( $mbl-util-neutral-subtle, 0.7);
+$mbl-util-neutral-subtle-dim20: transparentize( $mbl-util-neutral-subtle, 0.8);
+$mbl-util-neutral-subtle-dim10: transparentize( $mbl-util-neutral-subtle, 0.9);
 
 /*** utility caution ***/
 
 $mbl-util-caution: #ffcc00;
-
-$mbl-util-caution-dim90: transparentize( $mbl-util-caution, 0.1 );
-$mbl-util-caution-dim80: transparentize( $mbl-util-caution, 0.2 );
-$mbl-util-caution-dim70: transparentize( $mbl-util-caution, 0.3 );
-$mbl-util-caution-dim60: transparentize( $mbl-util-caution, 0.4 );
-$mbl-util-caution-dim50: transparentize( $mbl-util-caution, 0.5 );
-$mbl-util-caution-dim40: transparentize( $mbl-util-caution, 0.6 );
-$mbl-util-caution-dim30: transparentize( $mbl-util-caution, 0.7 );
-$mbl-util-caution-dim20: transparentize( $mbl-util-caution, 0.8 );
-$mbl-util-caution-dim10: transparentize( $mbl-util-caution, 0.9 );
-
+$mbl-util-caution-dim90: transparentize( $mbl-util-caution, 0.1);
+$mbl-util-caution-dim80: transparentize( $mbl-util-caution, 0.2);
+$mbl-util-caution-dim70: transparentize( $mbl-util-caution, 0.3);
+$mbl-util-caution-dim60: transparentize( $mbl-util-caution, 0.4);
+$mbl-util-caution-dim50: transparentize( $mbl-util-caution, 0.5);
+$mbl-util-caution-dim40: transparentize( $mbl-util-caution, 0.6);
+$mbl-util-caution-dim30: transparentize( $mbl-util-caution, 0.7);
+$mbl-util-caution-dim20: transparentize( $mbl-util-caution, 0.8);
+$mbl-util-caution-dim10: transparentize( $mbl-util-caution, 0.9);
 $mbl-util-caution-subtle: #ffcc66;
-
-$mbl-util-caution-subtle-dim90: transparentize( $mbl-util-caution-subtle, 0.1 );
-$mbl-util-caution-subtle-dim80: transparentize( $mbl-util-caution-subtle, 0.2 );
-$mbl-util-caution-subtle-dim70: transparentize( $mbl-util-caution-subtle, 0.3 );
-$mbl-util-caution-subtle-dim60: transparentize( $mbl-util-caution-subtle, 0.4 );
-$mbl-util-caution-subtle-dim50: transparentize( $mbl-util-caution-subtle, 0.5 );
-$mbl-util-caution-subtle-dim40: transparentize( $mbl-util-caution-subtle, 0.6 );
-$mbl-util-caution-subtle-dim30: transparentize( $mbl-util-caution-subtle, 0.7 );
-$mbl-util-caution-subtle-dim20: transparentize( $mbl-util-caution-subtle, 0.8 );
-$mbl-util-caution-subtle-dim10: transparentize( $mbl-util-caution-subtle, 0.9 );
+$mbl-util-caution-subtle-dim90: transparentize( $mbl-util-caution-subtle, 0.1);
+$mbl-util-caution-subtle-dim80: transparentize( $mbl-util-caution-subtle, 0.2);
+$mbl-util-caution-subtle-dim70: transparentize( $mbl-util-caution-subtle, 0.3);
+$mbl-util-caution-subtle-dim60: transparentize( $mbl-util-caution-subtle, 0.4);
+$mbl-util-caution-subtle-dim50: transparentize( $mbl-util-caution-subtle, 0.5);
+$mbl-util-caution-subtle-dim40: transparentize( $mbl-util-caution-subtle, 0.6);
+$mbl-util-caution-subtle-dim30: transparentize( $mbl-util-caution-subtle, 0.7);
+$mbl-util-caution-subtle-dim20: transparentize( $mbl-util-caution-subtle, 0.8);
+$mbl-util-caution-subtle-dim10: transparentize( $mbl-util-caution-subtle, 0.9);
 
 /*** utility negative ***/
 
-$mbl-util-negative: #cc0000; 
-
-$mbl-util-negative-dim90: transparentize( $mbl-util-negative, 0.1 );
-$mbl-util-negative-dim80: transparentize( $mbl-util-negative, 0.2 );
-$mbl-util-negative-dim70: transparentize( $mbl-util-negative, 0.3 );
-$mbl-util-negative-dim60: transparentize( $mbl-util-negative, 0.4 );
-$mbl-util-negative-dim50: transparentize( $mbl-util-negative, 0.5 );
-$mbl-util-negative-dim40: transparentize( $mbl-util-negative, 0.6 );
-$mbl-util-negative-dim30: transparentize( $mbl-util-negative, 0.7 );
-$mbl-util-negative-dim20: transparentize( $mbl-util-negative, 0.8 );
-$mbl-util-negative-dim10: transparentize( $mbl-util-negative, 0.9 );
-
-$mbl-util-negative-subtle: #993333; 
-
-$mbl-util-negative-subtle-dim90: transparentize( $mbl-util-negative-subtle, 0.1 );
-$mbl-util-negative-subtle-dim80: transparentize( $mbl-util-negative-subtle, 0.2 );
-$mbl-util-negative-subtle-dim70: transparentize( $mbl-util-negative-subtle, 0.3 );
-$mbl-util-negative-subtle-dim60: transparentize( $mbl-util-negative-subtle, 0.4 );
-$mbl-util-negative-subtle-dim50: transparentize( $mbl-util-negative-subtle, 0.5 );
-$mbl-util-negative-subtle-dim40: transparentize( $mbl-util-negative-subtle, 0.6 );
-$mbl-util-negative-subtle-dim30: transparentize( $mbl-util-negative-subtle, 0.7 );
-$mbl-util-negative-subtle-dim20: transparentize( $mbl-util-negative-subtle, 0.8 );
-$mbl-util-negative-subtle-dim10: transparentize( $mbl-util-negative-subtle, 0.9 );
+$mbl-util-negative: #cc0000;
+$mbl-util-negative-dim90: transparentize( $mbl-util-negative, 0.1);
+$mbl-util-negative-dim80: transparentize( $mbl-util-negative, 0.2);
+$mbl-util-negative-dim70: transparentize( $mbl-util-negative, 0.3);
+$mbl-util-negative-dim60: transparentize( $mbl-util-negative, 0.4);
+$mbl-util-negative-dim50: transparentize( $mbl-util-negative, 0.5);
+$mbl-util-negative-dim40: transparentize( $mbl-util-negative, 0.6);
+$mbl-util-negative-dim30: transparentize( $mbl-util-negative, 0.7);
+$mbl-util-negative-dim20: transparentize( $mbl-util-negative, 0.8);
+$mbl-util-negative-dim10: transparentize( $mbl-util-negative, 0.9);
+$mbl-util-negative-subtle: #993333;
+$mbl-util-negative-subtle-dim90: transparentize( $mbl-util-negative-subtle, 0.1);
+$mbl-util-negative-subtle-dim80: transparentize( $mbl-util-negative-subtle, 0.2);
+$mbl-util-negative-subtle-dim70: transparentize( $mbl-util-negative-subtle, 0.3);
+$mbl-util-negative-subtle-dim60: transparentize( $mbl-util-negative-subtle, 0.4);
+$mbl-util-negative-subtle-dim50: transparentize( $mbl-util-negative-subtle, 0.5);
+$mbl-util-negative-subtle-dim40: transparentize( $mbl-util-negative-subtle, 0.6);
+$mbl-util-negative-subtle-dim30: transparentize( $mbl-util-negative-subtle, 0.7);
+$mbl-util-negative-subtle-dim20: transparentize( $mbl-util-negative-subtle, 0.8);
+$mbl-util-negative-subtle-dim10: transparentize( $mbl-util-negative-subtle, 0.9);

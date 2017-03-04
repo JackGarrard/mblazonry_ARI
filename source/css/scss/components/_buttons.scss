@@ -2,174 +2,152 @@
   Mblazonry button styles 
 .........................*/
 
+
 /*** buttons ***/
 
-.mbl-btn{
-    display: inline-block;
-    background: $mbl-util-neutral;
-    color: $mbl-grey-white;
-	line-height: 1;
-    font-family: $mbl-font-secondary;
-	font-weight: $mbl-font-style-reg;
-    font-size: $mbl-font-size-med;
-	padding: $mbl-pad $mbl-pad-and-half;
-	border: 0;
-	border-radius: $mbl-border-radius-med;
-	text-align: center;
-	transition: background 0.2s ease;
-    cursor: pointer;
-
-	&:hover, &:focus {
-		background: $mbl-util-neutral-subtle;
-		color: $mbl-grey-80;
-	}
-    
-    /*** disabled button ***/
-    
-	&.disabled {
-		background: $mbl-grey-30;
-		color: $mbl-grey-50;
-        
-        &:hover, &:focus {
-            cursor: default;
-        }
-	}
-    
-    /*** positive button ***/
-    
-    &.positive {
-        background: $mbl-util-positive;
-        
-            &:hover, &:focus {
-            background: $mbl-util-positive-subtle;
-        }
+.mbl-btn {
+  display: inline-block;
+  background: $mbl-util-neutral;
+  color: $mbl-grey-white;
+  line-height: 1;
+  font-family: $mbl-font-secondary;
+  font-weight: $mbl-font-style-reg;
+  font-size: $mbl-font-size-med;
+  padding: $mbl-pad $mbl-pad-and-half;
+  border: 0;
+  border-radius: $mbl-border-radius-med;
+  text-align: center;
+  transition: background 0.2s ease;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background: $mbl-util-neutral-subtle;
+    color: $mbl-grey-80;
+  }
+  /*** disabled button ***/
+  &.disabled {
+    background: $mbl-grey-30;
+    color: $mbl-grey-50;
+    &:hover,
+    &:focus {
+      cursor: default;
     }
-    
-    /*** negative button ***/
-    
-    &.negative {
-        background: $mbl-util-negative;
-        
-            &:hover, &:focus {
-            background: $mbl-util-negative-subtle;
-            color: $mbl-grey-30;
-        }
+  }
+  /*** positive button ***/
+  &.positive {
+    background: $mbl-util-positive;
+    &:hover,
+    &:focus {
+      background: $mbl-util-positive-subtle;
     }
-    
-    /*** caution button ***/
-    
-    &.caution {
-        background: $mbl-util-caution;
-        color: $mbl-grey-80;
-        
-            &:hover, &:focus {
-                background: $mbl-util-caution-subtle;
-                color: $mbl-grey-50;
-        }
+  }
+  /*** negative button ***/
+  &.negative {
+    background: $mbl-util-negative;
+    &:hover,
+    &:focus {
+      background: $mbl-util-negative-subtle;
+      color: $mbl-grey-30;
     }
-    
-    /*** small button ***/
-    
-    &.small {
-        padding: $mbl-pad-half;
-        font-size: $mbl-font-size-small;
+  }
+  /*** caution button ***/
+  &.caution {
+    background: $mbl-util-caution;
+    color: $mbl-grey-80;
+    &:hover,
+    &:focus {
+      background: $mbl-util-caution-subtle;
+      color: $mbl-grey-50;
     }
-    
-    /*** large button ***/
-    
-    &.large {
-        padding: $mbl-pad-and-half $mbl-pad-triple;
-        font-weight: $mbl-font-style-bold;
-        font-size: $mbl-font-size-large;
-        border-radius: $mbl-border-radius-large;
-    }
+  }
+  /*** small button ***/
+  &.small {
+    padding: $mbl-pad-half;
+    font-size: $mbl-font-size-small;
+  }
+  /*** large button ***/
+  &.large {
+    padding: $mbl-pad-and-half $mbl-pad-triple;
+    font-weight: $mbl-font-style-bold;
+    font-size: $mbl-font-size-large;
+    border-radius: $mbl-border-radius-large;
+  }
 }
+
 
 /*** text buttons ***/
 
-.mbl-text-btn{
-	position: relative;
-	background: none;
-    border: none;
-    font-family: $mbl-font-secondary;
-    font-weight: $mbl-font-style-bold;
-    font-size: $mbl-font-size-large;
-    color: $mbl-util-neutral;
-    
+.mbl-text-btn {
+  position: relative;
+  background: none;
+  border: none;
+  font-family: $mbl-font-secondary;
+  font-weight: $mbl-font-style-bold;
+  font-size: $mbl-font-size-large;
+  color: $mbl-util-neutral;
+  &:after {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    background: url("../../../images/double-chevron-right.svg") no-repeat;
+    top: 5px;
+    right: -25px;
+    transition: all 0.2s ease;
+  }
+  &:hover,
+  &:focus {
+    color: $mbl-util-neutral-subtle;
+    cursor: pointer;
     &:after {
-	    position: absolute;
-		content: "";
-		height: 20px;
-		width: 20px;
-		background: url("../../../images/double-chevron-right.svg") no-repeat;
-	    top: 5px;
-		right: -25px;
-		transition: all 0.2s ease;
-	}
-    
-    &:hover, &:focus {
-	    color: $mbl-util-neutral-subtle;
-        cursor: pointer;
-	    
-	    &:after {
-		    right: -35px;
-	    }
+      right: -35px;
     }
-    
-    /*** disabled text button ***/
-    
-    &.disabled {
-		color: $mbl-grey-30; 
-	    
-	    &:hover{
-            cursor: default;
-	    }
-        
-        &:after {
-            right: -25px;
-        }
-	}
-    
-    /*** positive text button ***/
-    
-    &.positive {
-        color: $mbl-util-positive;
-        
-         &:hover, &:focus {
-	        color: $mbl-util-positive-subtle;
-        }
+  }
+  /*** disabled text button ***/
+  &.disabled {
+    color: $mbl-grey-30;
+    &:hover {
+      cursor: default;
     }
-    
-    /*** negative text button ***/
-    
-    &.negative {
-        color: $mbl-util-negative;
-        
-         &:hover, &:focus {
-	        color: $mbl-util-negative-subtle;
-        }
+    &:after {
+      right: -25px;
     }
-    
-    /*** caution text button ***/
-    
-    &.caution {
-        color: $mbl-util-caution;
-        
-         &:hover, &:focus {
-	        color: $mbl-util-caution-subtle;
-        }
+  }
+  /*** positive text button ***/
+  &.positive {
+    color: $mbl-util-positive;
+    &:hover,
+    &:focus {
+      color: $mbl-util-positive-subtle;
     }
+  }
+  /*** negative text button ***/
+  &.negative {
+    color: $mbl-util-negative;
+    &:hover,
+    &:focus {
+      color: $mbl-util-negative-subtle;
+    }
+  }
+  /*** caution text button ***/
+  &.caution {
+    color: $mbl-util-caution;
+    &:hover,
+    &:focus {
+      color: $mbl-util-caution-subtle;
+    }
+  }
 }
+
 
 /*** Radio button ***/
 
 input[type=radio] {
-    display: none;
+  display: none;
 }
 
-.mbl-radio-btn{
-    
-    & label {
+.mbl-radio-btn {
+  & label {
     display: inline-block;
     cursor: pointer;
     position: relative;
@@ -177,62 +155,55 @@ input[type=radio] {
     margin: $mbl-margin-quarter;
     font-size: $mbl-font-size-large;
     font-family: $mbl-font-secondary;
-    
-        &::before{
-            content: "";
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            margin-right: $mbl-margin;
-            position: absolute;
-            left: 0;
-            bottom: 1px;
-            background-color: $mbl-util-neutral;
-            border-radius: 50%;
-        }
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin-right: $mbl-margin;
+      position: absolute;
+      left: 0;
+      bottom: 1px;
+      background-color: $mbl-util-neutral;
+      border-radius: 50%;
     }
-    
-    &:hover label{
-        color: $mbl-util-neutral;
-        transition: all 0.2s ease;
+  }
+  &:hover label {
+    color: $mbl-util-neutral;
+    transition: all 0.2s ease;
+  }
+  /*** Disabled radio button ***/
+  &.disabled {
+    & label {
+      color: $mbl-grey-20;
+      &::before {
+        background-color: $mbl-grey-40;
+      }
     }
-    
-    /*** Disabled radio button ***/
-    
-    &.disabled{
-        & label{
-            color: $mbl-grey-20;
-            
-            &::before{
-                background-color: $mbl-grey-40;
-            }
-        }
-        
-        &:hover label{
-            cursor: default;
-            color: $mbl-grey-20;
-            transition: none;
-        }
+    &:hover label {
+      cursor: default;
+      color: $mbl-grey-20;
+      transition: none;
     }
-    
-    & input[type=radio]:checked + label:before {
-        content: "\2022";
-        color: $mbl-grey-10;
-        font-size: 40px;
-        text-align: center;
-        line-height: 25px;
-    }
+  }
+  & input[type=radio]:checked + label:before {
+    content: "\2022";
+    color: $mbl-grey-10;
+    font-size: 40px;
+    text-align: center;
+    line-height: 25px;
+  }
 }
+
 
 /******  CHECKBOXES ********/
 
 input[type=checkbox] {
-    display: none;
+  display: none;
 }
 
-.mbl-checkbox{
-    
-    & label {
+.mbl-checkbox {
+  & label {
     display: inline-block;
     cursor: pointer;
     position: relative;
@@ -240,48 +211,41 @@ input[type=checkbox] {
     margin-right: $mbl-pad;
     font-size: $mbl-font-size-large;
     font-family: $mbl-font-secondary;
-    
-        &::before{
-            content: "";
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
-            position: absolute;
-            left: 0;
-            bottom: 1px;
-            background-color: $mbl-grey-20;
-        }
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      position: absolute;
+      left: 0;
+      bottom: 1px;
+      background-color: $mbl-grey-20;
     }
-    
-    &:hover label{
-        color: $mbl-util-neutral;
-        transition: all 0.2s ease;
+  }
+  &:hover label {
+    color: $mbl-util-neutral;
+    transition: all 0.2s ease;
+  }
+  /*** Disabled checkbox button ***/
+  &.disabled {
+    & label {
+      color: $mbl-grey-20;
+      &::before {
+        background-color: $mbl-grey-20;
+      }
     }
-    
-    /*** Disabled checkbox button ***/
-    
-    &.disabled{
-        & label{
-            color: $mbl-grey-20;
-            
-            &::before{
-                background-color: $mbl-grey-20;
-            }
-        }
-        
-        &:hover label{
-            cursor: default;
-            color: $mbl-grey-20;
-            transition: none;
-        }
+    &:hover label {
+      cursor: default;
+      color: $mbl-grey-20;
+      transition: none;
     }
-    
-    & input[type=checkbox]:checked + label:before {
-        content: "\2714";
-        color: $mbl-brand-green;
-        font-size: 40px;
-        text-align: center;
-        line-height: 25px;
-    }
+  }
+  & input[type=checkbox]:checked + label:before {
+    content: "\2714";
+    color: $mbl-brand-green;
+    font-size: 40px;
+    text-align: center;
+    line-height: 25px;
+  }
 }
