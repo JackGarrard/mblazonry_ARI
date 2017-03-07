@@ -30,7 +30,7 @@
     color: $mbl-grey-50;
     &:hover,
     &:focus {
-      cursor: default;
+      cursor: not-allowed;
     }
   }
   /*** positive button ***/
@@ -107,7 +107,7 @@
   &.disabled {
     color: $mbl-grey-30;
     &:hover {
-      cursor: default;
+      cursor: not-allowed;
     }
     &:after {
       right: -25px;
@@ -181,7 +181,7 @@ input[type=radio] {
       }
     }
     &:hover label {
-      cursor: default;
+      cursor: not-allowed;
       color: $mbl-grey-20;
       transition: none;
     }
@@ -236,7 +236,7 @@ input[type=checkbox] {
       }
     }
     &:hover label {
-      cursor: default;
+      cursor: not-allowed;
       color: $mbl-grey-20;
       transition: none;
     }
