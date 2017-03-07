@@ -72,6 +72,11 @@
     font-size: $mbl-font-large;
     border-radius: $mbl-border-radius-large;
   }
+  
+  &.fa{
+    font-family: $mbl-fontawesome;
+    content: "\f066";
+  }
 }
 
 
