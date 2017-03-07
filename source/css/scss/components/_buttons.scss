@@ -1,196 +1,124 @@
-/*......................... 
-  Mblazonry button styles 
+/*.........................
+  Mblazonry field styles
 .........................*/
 
 
-/*** buttons ***/
+/*** text inputs ***/
 
-.mbl-btn {
-  display: inline-block;
-  background: $mbl-util-neutral;
-  color: $mbl-grey-white;
-  line-height: 1;
-  font-family: $mbl-font-secondary;
-  font-weight: $mbl-font-reg;
-  font-size: $mbl-font-med;
-  padding: $mbl-pad $mbl-pad-and-half;
-  border: 0;
+.mbl-text-input {
+  background: $mbl-grey-white;
   border-radius: $mbl-border-radius-med;
-  text-align: center;
-  transition: background 0.2s ease;
-  cursor: pointer;
-  &:hover,
-  &:focus {
-    background: $mbl-util-neutral-subtle;
-    color: $mbl-grey-80;
-  }
-  /*** disabled button ***/
-  &.disabled {
-    background: $mbl-grey-30;
-    color: $mbl-grey-50;
-    &:hover,
-    &:focus {
-      cursor: default;
-    }
-  }
-  /*** positive button ***/
-  &.positive {
-    background: $mbl-util-positive;
-    &:hover,
-    &:focus {
-      background: $mbl-util-positive-subtle;
-    }
-  }
-  /*** negative button ***/
-  &.negative {
-    background: $mbl-util-negative;
-    &:hover,
-    &:focus {
-      background: $mbl-util-negative-subtle;
-      color: $mbl-grey-30;
-    }
-  }
-  /*** caution button ***/
-  &.caution {
-    background: $mbl-util-caution;
-    color: $mbl-grey-80;
-    &:hover,
-    &:focus {
-      background: $mbl-util-caution-subtle;
-      color: $mbl-grey-50;
-    }
-  }
-  /*** small button ***/
-  &.small {
-    padding: $mbl-pad-half;
-    font-size: $mbl-font-small;
-  }
-  /*** large button ***/
-  &.large {
-    padding: $mbl-pad-and-half $mbl-pad-triple;
-    font-weight: $mbl-font-bold;
-    font-size: $mbl-font-large;
-    border-radius: $mbl-border-radius-large;
-  }
-}
-
-
-/*** text buttons ***/
-
-.mbl-text-btn {
-  position: relative;
-  background: none;
-  border: none;
+  border-style: none;
+  border: 2px solid $mbl-util-neutral;
+  padding: $mbl-pad-half $mbl-pad;
+  margin: $mbl-margin;
+  color: $mbl-grey-black;
+  font-weight: $mbl-font-style-bold;
   font-family: $mbl-font-secondary;
-  font-weight: $mbl-font-bold;
-  font-size: $mbl-font-large;
-  color: $mbl-util-neutral;
-  &:after {
-    position: absolute;
-    content: "";
-    height: 20px;
-    width: 20px;
-    background: url("../../../images/double-chevron-right.svg") no-repeat;
-    top: 5px;
-    right: -25px;
-    transition: all 0.2s ease;
-  }
+  transition: background 0.2s ease;
+  @include placeholder($mbl-grey-30);
   &:hover,
   &:focus {
-    color: $mbl-util-neutral-subtle;
-    cursor: pointer;
-    &:after {
-      right: -35px;
-    }
+    background: $mbl-util-neutral-subtle-dim10;
+    border-color: $mbl-util-neutral-subtle;
+    @include placeholder($mbl-grey-50);
   }
-  /*** disabled text button ***/
+  /*** diasabled text input ***/
   &.disabled {
-    color: $mbl-grey-30;
-    &:hover {
-      cursor: default;
-    }
-    &:after {
-      right: -25px;
+    background: $mbl-grey-10;
+    border-color: $mbl-grey-20;
+    transition: none;
+    @include placeholder($mbl-grey-20);
+    &:hover,
+    &:focus {
+      @include placeholder($mbl-grey-20);
+      cursor: not-allowed;
     }
   }
-  /*** positive text button ***/
+  /*** positive text input ***/
   &.positive {
-    color: $mbl-util-positive;
+    border-color: $mbl-util-positive;
     &:hover,
     &:focus {
-      color: $mbl-util-positive-subtle;
+      background: $mbl-util-positive-subtle-dim10;
+      border-color: $mbl-util-positive-subtle;
     }
   }
-  /*** negative text button ***/
-  &.negative {
-    color: $mbl-util-negative;
-    &:hover,
-    &:focus {
-      color: $mbl-util-negative-subtle;
-    }
-  }
-  /*** caution text button ***/
+  /*** caution text input ***/
   &.caution {
-    color: $mbl-util-caution;
+    border-color: $mbl-util-caution;
     &:hover,
     &:focus {
-      color: $mbl-util-caution-subtle;
+      background: $mbl-util-caution-subtle-dim10;
+      border-color: $mbl-util-caution-subtle;
+    }
+  }
+  /*** negative text input ***/
+  &.negative {
+    border-color: $mbl-util-negative;
+    &:hover,
+    &:focus {
+      background: $mbl-util-negative-subtle-dim10;
+      border-color: $mbl-util-negative-subtle;
     }
   }
 }
 
 
-/*** Radio button ***/
+/*** Text area ***/
 
-input[type=radio] {
-  display: none;
+.mbl-text-area {
+  font-family: $mbl-font-secondary;
+  font-weight: $mbl-font-style-bold;
+  color: $mbl-grey-black;
+  background: $mbl-grey-white;
+  padding: $mbl-pad-half $mbl-pad-double;
+  border-style: none;
+  border: 2px solid $mbl-util-neutral;
+  border-radius: $mbl-border-radius-small;
+  @include placeholder($mbl-grey-30);
+  &:hover,
+  &:focus {
+    background: $mbl-util-neutral-subtle-dim10;
+    border-color: $mbl-util-neutral-subtle;
+    @include placeholder($mbl-grey-50);
+  }
 }
 
-.mbl-radio-btn {
-  & label {
-    display: inline-block;
-    cursor: pointer;
-    position: relative;
-    padding-left: $mbl-pad-double-and-half;
-    margin-right: $mbl-pad;
-    font-size: $mbl-font-large;
+
+/*** Select menu ***/
+
+.mbl-select-menu {
+  font-family: $mbl-font-secondary;
+  font-weight: $mbl-font-style-reg;
+  color: $mbl-grey-black;
+  background: $mbl-grey-white;
+  padding: $mbl-pad-half $mbl-pad-triple;
+  border-style: none;
+  border: 2px solid $mbl-util-neutral;
+  border-radius: $mbl-border-radius-small;
+  &:hover {
+    background: $mbl-util-neutral-subtle-dim10;
+    border-color: $mbl-util-neutral-subtle;
+  }
+  &:focus {
+    background: $mbl-grey-white;
+    border-color: $mbl-util-neutral-subtle;
+    border-radius: $mbl-border-radius-small;
+    outline: 2px solid $mbl-util-neutral;
+    outline-style: none;
+    box-shadow: none;
+  }
+}
+
+
+/*** Labeled input field styles ***/
+
+.mbl-input-field {
+  margin-bottom: $mbl-pad;
+  &>.label {
     font-family: $mbl-font-secondary;
-    &::before {
-      content: "";
-      display: inline-block;
-      width: 30px;
-      height: 30px;
-      margin-right: 10px;
-      position: absolute;
-      left: 0;
-      bottom: 1px;
-      background-color: $mbl-util-neutral;
-      border-radius: 50%;
-    }
-  }
-  &:hover label {
-    color: $mbl-util-neutral;
-    transition: all 0.2s ease;
-  }
-  /*** Disabled radio button ***/
-  &.disabled {
-    & label {
-      color: $mbl-grey-20;
-      &::before {
-        background-color: $mbl-grey-40;
-      }
-    }
-    &:hover label {
-      cursor: default;
-      color: $mbl-grey-20;
-      transition: none;
-    }
-  }
-  & input[type=radio]:checked + label:before {
-    content: "\2022";
-    color: $mbl-grey-10;
-    font-size: 40px;
-    text-align: center;
-    line-height: 25px;
+    font-weight: $mbl-font-style-reg;
+    font-size: $mbl-font-size-med;
   }
 }

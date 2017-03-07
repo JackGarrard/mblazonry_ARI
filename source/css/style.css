@@ -624,7 +624,7 @@ input[type=radio] {
     cursor: pointer;
     position: relative;
     padding-left: 2.5em;
-    margin-right: 1em;
+    margin: 0.25em;
     font-size: 1.25rem;
     font-family: "Nunito", sans-serif; }
     .mbl-radio-btn label::before {
@@ -632,7 +632,7 @@ input[type=radio] {
       display: inline-block;
       width: 30px;
       height: 30px;
-      margin-right: 10px;
+      margin-right: 1em;
       position: absolute;
       left: 0;
       bottom: 1px;
@@ -656,6 +656,48 @@ input[type=radio] {
     text-align: center;
     line-height: 25px; }
 
+/******  CHECKBOXES ********/
+input[type=checkbox] {
+  display: none; }
+
+.mbl-checkbox {
+  /*** Disabled checkbox button ***/ }
+  .mbl-checkbox label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 2.5em;
+    margin-right: 1em;
+    font-size: 1.25rem;
+    font-family: "Nunito", sans-serif; }
+    .mbl-checkbox label::before {
+      content: "";
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      position: absolute;
+      left: 0;
+      bottom: 1px;
+      background-color: #cdcdcd; }
+  .mbl-checkbox:hover label {
+    color: #006699;
+    transition: all 0.2s ease; }
+  .mbl-checkbox.disabled label {
+    color: #cdcdcd; }
+    .mbl-checkbox.disabled label::before {
+      background-color: #cdcdcd; }
+  .mbl-checkbox.disabled:hover label {
+    cursor: default;
+    color: #cdcdcd;
+    transition: none; }
+  .mbl-checkbox input[type=checkbox]:checked + label:before {
+    content: "\2714";
+    color: #45A840;
+    font-size: 40px;
+    text-align: center;
+    line-height: 25px; }
+
 /*.........................
   Mblazonry field styles
 .........................*/
@@ -666,6 +708,7 @@ input[type=radio] {
   border-style: none;
   border: 2px solid #006699;
   padding: 0.5em 1em;
+  margin: 1em;
   color: #000000;
   font-weight: 700;
   font-family: "Nunito", sans-serif;
@@ -791,3 +834,6 @@ input[type=radio] {
 /*.........................
   Mblazonry forms styles
 .........................*/
+.mbl-form-test-feb27 {
+  border: 2xp solid #006699;
+  border-radius: 3px; }
