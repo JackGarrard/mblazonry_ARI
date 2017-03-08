@@ -3,6 +3,16 @@
 .........................*/
 
 
+/*icon creation and styling*/
+
+[data-icon]:before {
+  font-family: $mbl-fontawesome;
+  content: attr(data-icon);
+  speak: none;
+  margin-right: 0.5em;
+}
+
+
 /*** buttons ***/
 
 .mbl-btn {
@@ -71,11 +81,6 @@
     font-weight: $mbl-font-bold;
     font-size: $mbl-font-large;
     border-radius: $mbl-border-radius-large;
-  }
-  
-  &.fa{
-    font-family: $mbl-fontawesome;
-    content: "\f066";
   }
 }
 

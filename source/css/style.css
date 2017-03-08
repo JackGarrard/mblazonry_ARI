@@ -554,9 +554,12 @@ a {
     font-weight: 700;
     font-size: 1.25rem;
     border-radius: 7px; }
-  .mbl-btn.fa {
-    font-family: "FontAwesome";
-    content: "\f066"; }
+
+[data-icon]:before {
+  font-family: "FontAwesome";
+  content: attr(data-icon);
+  speak: none;
+  margin-right: 0.5em; }
 
 /*** text buttons ***/
 .mbl-text-btn {
