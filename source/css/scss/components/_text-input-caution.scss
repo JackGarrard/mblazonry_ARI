@@ -1,0 +1,14 @@
+/*.........................
+  Caution text input styles
+.........................*/
+
+.mbl-text-input {
+  &.caution {
+    border-color: $mbl-util-caution;
+    &:hover,
+    &:focus {
+      background: $mbl-util-caution-subtle-dim10;
+      border-color: $mbl-util-caution-subtle;
+    }
+  }
+}

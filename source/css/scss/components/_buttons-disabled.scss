@@ -1,0 +1,14 @@
+/*......................... 
+  Disabled button styles 
+.........................*/
+
+.mbl-btn {
+  &.disabled {
+    background: $mbl-grey-30;
+    color: $mbl-grey-50;
+    &:hover,
+    &:focus {
+      cursor: default;
+    }
+  }
+}

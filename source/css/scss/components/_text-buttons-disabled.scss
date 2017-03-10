@@ -1,0 +1,15 @@
+/*......................... 
+  Disabled text button styles 
+.........................*/
+
+.mbl-text-btn {
+  &.disabled {
+    color: $mbl-grey-30;
+    &:hover {
+      cursor: default;
+    }
+    &:after {
+      right: -25px;
+    }
+  }
+}
