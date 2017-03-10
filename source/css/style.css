@@ -502,6 +502,19 @@ a {
 /*......................... 
   Mblazonry button styles 
 .........................*/
+/*icon creation and styling*/
+[data-icon]:before {
+  font-family: "FontAwesome";
+  content: attr(data-icon);
+  speak: none;
+  margin-right: 0.5em; }
+
+[close-icon]:before {
+  font-family: "FontAwesome";
+  content: attr(close-icon);
+  speak: none;
+  margin-right: 0.5em; }
+
 /*** buttons ***/
 .mbl-btn {
   display: inline-block;
@@ -554,12 +567,6 @@ a {
     font-weight: 700;
     font-size: 1.25rem;
     border-radius: 7px; }
-
-[data-icon]:before {
-  font-family: "FontAwesome";
-  content: attr(data-icon);
-  speak: none;
-  margin-right: 0.5em; }
 
 /*** text buttons ***/
 .mbl-text-btn {

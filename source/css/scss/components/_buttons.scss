@@ -13,6 +13,14 @@
 }
 
 
+[close-icon]:before {
+  font-family: $mbl-fontawesome;
+  content: attr(close-icon);
+  speak: none;
+  margin-right: 0.5em;
+}
+
+
 /*** buttons ***/
 
 .mbl-btn {
