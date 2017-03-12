@@ -1,5 +1,8 @@
 # Release Notes
 
+## Mar 12 - 4:30pm
+* (branch: dev) Fixed compilation issues arising from outdated SCSS variable names
+
 ## Mar 9 - 11:20pm
 * (branch: fontawesome-include) Nick uploaded 'X' mark button - in need of revision - 'X' button should appear like a typical close button and not an awkward button
 * (branch: scssmustache-refactor) SCSS component files have been widely split so each atom has it's own scss partial (e.g. 'radio-button.mustache' => '_radio-button.scss')]

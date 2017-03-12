@@ -11,8 +11,8 @@
   color: $mbl-grey-white;
   line-height: 1;
   font-family: $mbl-font-secondary;
-  font-weight: $mbl-font-reg;
-  font-size: $mbl-font-med;
+  font-weight: $mbl-font-style-reg;
+  font-size: $mbl-font-size-med;
   padding: $mbl-pad $mbl-pad-and-half;
   border: 0;
   border-radius: $mbl-border-radius-med;
@@ -63,13 +63,13 @@
   /*** small button ***/
   &.small {
     padding: $mbl-pad-half;
-    font-size: $mbl-font-small;
+    font-size: $mbl-font-size-small;
   }
   /*** large button ***/
   &.large {
     padding: $mbl-pad-and-half $mbl-pad-triple;
-    font-weight: $mbl-font-bold;
-    font-size: $mbl-font-large;
+    font-weight: $mbl-font-style-bold;
+    font-size: $mbl-font-size-large;
     border-radius: $mbl-border-radius-large;
   }
 }
@@ -82,8 +82,8 @@
   background: none;
   border: none;
   font-family: $mbl-font-secondary;
-  font-weight: $mbl-font-bold;
-  font-size: $mbl-font-large;
+  font-weight: $mbl-font-style-bold;
+  font-size: $mbl-font-size-large;
   color: $mbl-util-neutral;
   &:after {
     position: absolute;
@@ -152,8 +152,8 @@ input[type=radio] {
     cursor: pointer;
     position: relative;
     padding-left: $mbl-pad-double-and-half;
-    margin-right: $mbl-pad;
-    font-size: $mbl-font-large;
+    margin-right: $mbl-margin;
+    font-size: $mbl-font-size-large;
     font-family: $mbl-font-secondary;
     &::before {
       content: "";
@@ -208,8 +208,8 @@ input[type=checkbox] {
     cursor: pointer;
     position: relative;
     padding-left: $mbl-pad-double-and-half;
-    margin-right: $mbl-pad;
-    font-size: $mbl-font-large;
+    margin-right: $mbl-margin;
+    font-size: $mbl-font-size-large;
     font-family: $mbl-font-secondary;
     &::before {
       content: "";
