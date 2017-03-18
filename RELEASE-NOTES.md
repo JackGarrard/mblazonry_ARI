@@ -1,5 +1,9 @@
 # Release Notes
 
+## Mar 18 - 2:50pm
+* Merged 'scssmustache-refactor' into 'dev']
+* Known issue: Radio buttons and Checkboxes can no longer be checked - revision needed
+
 ## Mar 12 - 4:30pm
 * (branch: dev) Fixed compilation issues arising from outdated SCSS variable names
 
