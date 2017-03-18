@@ -1,5 +1,13 @@
 # Release Notes
 
+## Mar 12 - 4:30pm
+* (branch: dev) Fixed compilation issues arising from outdated SCSS variable names
+
+## Mar 9 - 11:20pm
+* (branch: fontawesome-include) Nick uploaded 'X' mark button - in need of revision - 'X' button should appear like a typical close button and not an awkward button
+* (branch: scssmustache-refactor) SCSS component files have been widely split so each atom has it's own scss partial (e.g. 'radio-button.mustache' => '_radio-button.scss')]
+* (branch: scssmustache-refactor) All team-created mustache files have been updated to include mustache variables rather than hard coded values
+
 ## Mar 4 - 1:30pm
 * (branch: dev) White space and formatting issues have been addressed across the inventory's SCSS files - similar issues found in .mustache files need to be addressed
 * (branch: dev) .md files for all team-created atoms and molecules have been updated with information about usage
