@@ -6,6 +6,6 @@ patternlab.json
 Thumbs.db
 .idea/
 public
-# Ignoring css and map files 
-*.css
-*.map
+# Ignoring css and map files
+source/css/style.css
+source/css/style.css.map
