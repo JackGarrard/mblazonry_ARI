@@ -699,9 +699,9 @@ input[type=radio] {
 .mbl-radio-btn input[type=radio]:checked + label:before {
   content: "\2022";
   color: #e5e5e5;
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
-  line-height: 25px; }
+  line-height: 31px; }
 
 /*......................... 
   Disabled radio button styles 

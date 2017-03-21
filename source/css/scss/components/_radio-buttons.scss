@@ -36,8 +36,8 @@ input[type=radio] {
   & input[type=radio]:checked + label:before {
     content: "\2022";
     color: $mbl-grey-10;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
-    line-height: 25px;
+    line-height: 31px;
   }
 }

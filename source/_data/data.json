@@ -5,11 +5,13 @@
   },
   "btnText": "Button",
   "txtBtnText": "Text Button",
+  "rdBtnId": "rdBtnId",
   "rdBtnLabel": "Radio button",
   "txtFieldPlaceholder": "Text field placeholder",
   "txtAreaPlaceholder": "Text area placeholder",
   "selectMenuLabel": "Select menu label",
   "selectMenuOption": "Select menu option",
+  "chkBoxId": "chkBoxId",
   "chkBoxLabel": "Checkbox label",
   "txtFieldLabel": "Text field label",
 
