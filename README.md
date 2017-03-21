@@ -101,3 +101,11 @@ To install a specific StarterKit from GitHub type:
     npm install [starterkit-vendor/starterkit-name]
 
     gulp patternlab:loadstarterkit --kit=[starterkit-name]
+    
+## How to set Diffmerge as git mergetool
+* Use the following git commands
+
+* git config --global --add merge.tool diffmerge
+* git config --global --add mergetool.diffmerge.path "path-to-diffmerge-executable"
+* git config --global --add mergetool.diffmerge.trustExitCode false
+

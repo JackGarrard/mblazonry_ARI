@@ -1,0 +1,14 @@
+/*.........................
+  Negative text input styles
+.........................*/
+
+.mbl-text-input {
+  &.negative {
+    border-color: $mbl-util-negative;
+    &:hover,
+    &:focus {
+      background: $mbl-util-negative-subtle-dim10;
+      border-color: $mbl-util-negative-subtle;
+    }
+  }
+}

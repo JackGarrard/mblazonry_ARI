@@ -1,0 +1,32 @@
+/*.........................
+  Text input styles
+.........................*/
+
+.mbl-text-input {
+  background: $mbl-grey-white;
+  border-radius: $mbl-border-radius-med;
+  border-style: none;
+  border: 2px solid $mbl-util-neutral;
+  padding: $mbl-pad-half $mbl-pad;
+  margin: $mbl-margin;
+  color: $mbl-grey-black;
+  font-weight: $mbl-font-style-bold;
+  font-family: $mbl-font-secondary;
+  transition: background 0.2s ease;
+  @include placeholder($mbl-grey-30);
+  &:hover,
+  &:focus {
+    background: $mbl-util-neutral-subtle-dim10;
+    border-color: $mbl-util-neutral-subtle;
+    @include placeholder($mbl-grey-50);
+  }
+}
+
+.mbl-input-field {
+  margin-bottom: $mbl-pad;
+  &>.label {
+    font-family: $mbl-font-secondary;
+    font-weight: $mbl-font-style-reg;
+    font-size: $mbl-font-size-med;
+  }
+}

@@ -3,24 +3,45 @@
 .......................................*/
 /*
 *
-* CORE....................Declarations of scss variables
-* colour-variables........colour variables
-* fonts...................includes fonts used across entire inventory
-* global-classes..........Various classes and base styles used across entire inventory
-* headings................base styles used for headings (H1, H2, etc.)
-* links...................base styles used for links
-* mixins..................Various mixins used across entire inventory
-* reset...................css reset to reset default browser styles
-* spacing-variables.......base styles and variables for spacing content
-* typography-variables....font variables
+* CORE.........................Declarations of scss variables
+* colour-variables.............colour variables
+* fonts........................includes fonts used across entire inventory
+* global-classes...............Various classes and base styles used across entire inventory
+* headings.....................base styles used for headings (H1, H2, etc.)
+* links........................base styles used for links
+* mixins.......................Various mixins used across entire inventory
+* reset........................css reset to reset default browser styles
+* spacing-variables............base styles and variables for spacing content
+* typography-variables.........font variables
 *
 *****
 *****
 *
-* COMPONENTS...............Styles specific to components
-* buttons..................Styles specific to all buttons
-* fields...................Styles specific to all input fields
-* forms....................Styles specific to all forms
+* COMPONENTS....................Styles specific to components
+* buttons.......................Default button styles
+* buttons-disabled..............Styles specific to disabled buttons
+* buttons-positive..............Styles specific to positive buttons
+* buttons-caution...............Styles specific to caution buttons
+* buttons-negative..............Styles specific to negative buttons
+* buttons-large.................Styles specific to large buttons
+* buttons-small.................Styles specific to small buttons
+* text-buttons..................Default text button styles
+* text-buttons-disabled.........Styles specific to disabled text buttons
+* text-buttons-positive.........Styles specific to positive text buttons
+* text-buttons-caution..........Styles specific to caution text buttons
+* text-buttons-negative.........Styles specific to negative text buttons
+* radio-buttons.................Default radio button styles
+* radio-buttons-disabled........Styles specific to disabled radio buttons
+* checkboxes....................Default checkboxes styles
+* checkboxes-disabled...........Styles specific to disabled checkboxes
+* text-input....................Default text input styles
+* text-input-disabled...........Styles specific to disabled text inputs
+* text-input-positive...........Styles specific to positive text inputs
+* text-input-caution............Styles specific to caution text inputs
+* text-input-negative...........Styles specific to negative text inputs
+* text-area.....................Default text area styles
+* select-menu...................Default select menu styles
+* forms.........................Styles specific to all forms
 * 
 */
 /*.....................................
@@ -84,6 +105,18 @@ figure {
   font-family: 'FontAwesome';
   src: url("../../../fonts/fontawesome-webfont.eot?v=4.7.0");
   src: url("../../../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../../../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../../../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../../../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../../../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url("../../../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Nunito', sans-serif;
+  src: url("../../../fonts/Nunito-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -500,7 +533,7 @@ a {
     COMPONENTS
 .....................................*/
 /*......................... 
-  Mblazonry button styles 
+  Button styles 
 .........................*/
 /*icon creation and styling*/
 [data-icon]:before {
@@ -522,46 +555,66 @@ a {
   border-radius: 5px;
   text-align: center;
   transition: background 0.2s ease;
-  cursor: pointer;
-  /*** disabled button ***/
-  /*** positive button ***/
-  /*** negative button ***/
-  /*** caution button ***/
-  /*** small button ***/
-  /*** large button ***/ }
+  cursor: pointer; }
   .mbl-btn:hover, .mbl-btn:focus {
     background: #3399ff;
     color: #333333; }
-  .mbl-btn.disabled {
-    background: #b3b3b3;
-    color: #808080; }
-    .mbl-btn.disabled:hover, .mbl-btn.disabled:focus {
-      cursor: default; }
-  .mbl-btn.positive {
-    background: #006600; }
-    .mbl-btn.positive:hover, .mbl-btn.positive:focus {
-      background: #009966; }
-  .mbl-btn.negative {
-    background: #cc0000; }
-    .mbl-btn.negative:hover, .mbl-btn.negative:focus {
-      background: #993333;
-      color: #b3b3b3; }
-  .mbl-btn.caution {
-    background: #ffcc00;
-    color: #333333; }
-    .mbl-btn.caution:hover, .mbl-btn.caution:focus {
-      background: #ffcc66;
-      color: #808080; }
-  .mbl-btn.small {
-    padding: 0.5em;
-    font-size: 0.75rem; }
-  .mbl-btn.large {
-    padding: 1.5em 3em;
-    font-weight: 700;
-    font-size: 1.25rem;
-    border-radius: 7px; }
 
-/*** text buttons ***/
+/*......................... 
+  Disabled button styles 
+.........................*/
+.mbl-btn.disabled {
+  background: #b3b3b3;
+  color: #808080; }
+  .mbl-btn.disabled:hover, .mbl-btn.disabled:focus {
+    cursor: default; }
+
+/*......................... 
+  Positive button styles 
+.........................*/
+.mbl-btn.positive {
+  background: #006600; }
+  .mbl-btn.positive:hover, .mbl-btn.positive:focus {
+    background: #009966; }
+
+/*......................... 
+  Caution button styles 
+.........................*/
+.mbl-btn.caution {
+  background: #ffcc00;
+  color: #333333; }
+  .mbl-btn.caution:hover, .mbl-btn.caution:focus {
+    background: #ffcc66;
+    color: #808080; }
+
+/*......................... 
+  Negative button styles 
+.........................*/
+.mbl-btn.negative {
+  background: #cc0000; }
+  .mbl-btn.negative:hover, .mbl-btn.negative:focus {
+    background: #993333;
+    color: #b3b3b3; }
+
+/*......................... 
+  Large button styles 
+.........................*/
+.mbl-btn.large {
+  padding: 1.5em 3em;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border-radius: 7px; }
+
+/*......................... 
+  Small button styles 
+.........................*/
+.mbl-btn.small {
+  padding: 0.5em;
+  font-size: 0.75rem; }
+
+/*......................... 
+  Text button styles 
+.........................*/
 .mbl-text-btn {
   position: relative;
   background: none;
@@ -569,11 +622,7 @@ a {
   font-family: "Nunito", sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
-  color: #006699;
-  /*** disabled text button ***/
-  /*** positive text button ***/
-  /*** negative text button ***/
-  /*** caution text button ***/ }
+  color: #006699; }
   .mbl-text-btn:after {
     position: absolute;
     content: "";
@@ -588,86 +637,155 @@ a {
     cursor: pointer; }
     .mbl-text-btn:hover:after, .mbl-text-btn:focus:after {
       right: -35px; }
-  .mbl-text-btn.disabled {
-    color: #b3b3b3; }
-    .mbl-text-btn.disabled:hover {
-      cursor: default; }
-    .mbl-text-btn.disabled:after {
-      right: -25px; }
-  .mbl-text-btn.positive {
-    color: #006600; }
-    .mbl-text-btn.positive:hover, .mbl-text-btn.positive:focus {
-      color: #009966; }
-  .mbl-text-btn.negative {
-    color: #cc0000; }
-    .mbl-text-btn.negative:hover, .mbl-text-btn.negative:focus {
-      color: #993333; }
-  .mbl-text-btn.caution {
-    color: #ffcc00; }
-    .mbl-text-btn.caution:hover, .mbl-text-btn.caution:focus {
-      color: #ffcc66; }
 
-/*** Radio button ***/
+/*......................... 
+  Disabled text button styles 
+.........................*/
+.mbl-text-btn.disabled {
+  color: #b3b3b3; }
+  .mbl-text-btn.disabled:hover {
+    cursor: default; }
+  .mbl-text-btn.disabled:after {
+    right: -25px; }
+
+/*......................... 
+  Positive text button styles 
+.........................*/
+.mbl-text-btn.positive {
+  color: #006600; }
+  .mbl-text-btn.positive:hover, .mbl-text-btn.positive:focus {
+    color: #009966; }
+
+/*......................... 
+  Caution text button styles 
+.........................*/
+.mbl-text-btn.caution {
+  color: #ffcc00; }
+  .mbl-text-btn.caution:hover, .mbl-text-btn.caution:focus {
+    color: #ffcc66; }
+
+/*......................... 
+  Negative text button styles 
+.........................*/
+.mbl-text-btn.negative {
+  color: #cc0000; }
+  .mbl-text-btn.negative:hover, .mbl-text-btn.negative:focus {
+    color: #993333; }
+
+/*......................... 
+  Radio button styles 
+.........................*/
 input[type=radio] {
   display: none; }
 
-.mbl-radio-btn {
-  /*** Disabled radio button ***/ }
-  .mbl-radio-btn label {
+.mbl-radio-btn label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 2.5em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  font-size: 1.25rem;
+  font-family: "Nunito", sans-serif; }
+  .mbl-radio-btn label::before {
+    content: "";
     display: inline-block;
-    cursor: pointer;
-    position: relative;
-    padding-left: 2.5em;
-    margin-right: 1em;
-    font-size: 1.25rem;
-    font-family: "Nunito", sans-serif; }
-    .mbl-radio-btn label::before {
-      content: "";
-      display: inline-block;
-      width: 30px;
-      height: 30px;
-      margin-right: 10px;
-      position: absolute;
-      left: 0;
-      bottom: 1px;
-      background-color: #006699;
-      border-radius: 50%; }
-  .mbl-radio-btn:hover label {
-    color: #006699;
-    transition: all 0.2s ease; }
-  .mbl-radio-btn.disabled label {
-    color: #cdcdcd; }
-    .mbl-radio-btn.disabled label::before {
-      background-color: #999999; }
-  .mbl-radio-btn.disabled:hover label {
-    cursor: default;
-    color: #cdcdcd;
-    transition: none; }
-  .mbl-radio-btn input[type=radio]:checked + label:before {
-    content: "\2022";
-    color: #e5e5e5;
-    font-size: 40px;
-    text-align: center;
-    line-height: 25px; }
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #006699;
+    border-radius: 50%; }
+
+.mbl-radio-btn:hover label {
+  color: #006699;
+  transition: all 0.2s ease; }
+
+.mbl-radio-btn input[type=radio]:checked + label:before {
+  content: "\2022";
+  color: #e5e5e5;
+  font-size: 50px;
+  text-align: center;
+  line-height: 31px; }
+
+/*......................... 
+  Disabled radio button styles 
+.........................*/
+.mbl-radio-btn.disabled label {
+  color: #cdcdcd; }
+  .mbl-radio-btn.disabled label::before {
+    background-color: #999999; }
+
+.mbl-radio-btn.disabled:hover label {
+  cursor: default;
+  color: #cdcdcd;
+  transition: none; }
+
+/*......................... 
+  Checkboxes styles 
+.........................*/
+input[type=checkbox] {
+  display: none; }
+
+.mbl-checkbox label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 2.5em;
+  margin-right: 1em;
+  font-size: 1.25rem;
+  font-family: "Nunito", sans-serif; }
+  .mbl-checkbox label::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #cdcdcd; }
+
+.mbl-checkbox:hover label {
+  color: #006699;
+  transition: all 0.2s ease; }
+
+.mbl-checkbox input[type=checkbox]:checked + label:before {
+  content: "\2714";
+  color: #45A840;
+  font-size: 40px;
+  text-align: center;
+  line-height: 25px; }
+
+/*......................... 
+  Disabled checkboxes styles 
+.........................*/
+.mbl-checkbox.disabled label {
+  color: #cdcdcd; }
+  .mbl-checkbox.disabled label::before {
+    background-color: #cdcdcd; }
+
+.mbl-checkbox.disabled:hover label {
+  cursor: default;
+  color: #cdcdcd;
+  transition: none; }
 
 /*.........................
-  Mblazonry field styles
+  Text input styles
 .........................*/
-/*** text inputs ***/
 .mbl-text-input {
   background: #ffffff;
   border-radius: 5px;
   border-style: none;
   border: 2px solid #006699;
   padding: 0.5em 1em;
+  margin: 1em;
   color: #000000;
   font-weight: 700;
   font-family: "Nunito", sans-serif;
-  transition: background 0.2s ease;
-  /*** diasabled text input ***/
-  /*** positive text input ***/
-  /*** caution text input ***/
-  /*** negative text input ***/ }
+  transition: background 0.2s ease; }
   .mbl-text-input::-webkit-input-placeholder {
     color: #b3b3b3; }
   .mbl-text-input:-moz-placeholder {
@@ -687,18 +805,31 @@ input[type=radio] {
       color: #808080; }
     .mbl-text-input:hover:-ms-input-placeholder, .mbl-text-input:focus:-ms-input-placeholder {
       color: #808080; }
-  .mbl-text-input.disabled {
-    background: #e5e5e5;
-    border-color: #cdcdcd;
-    transition: none; }
-    .mbl-text-input.disabled::-webkit-input-placeholder {
-      color: #cdcdcd; }
-    .mbl-text-input.disabled:-moz-placeholder {
-      color: #cdcdcd; }
-    .mbl-text-input.disabled::-moz-placeholder {
-      color: #cdcdcd; }
-    .mbl-text-input.disabled:-ms-input-placeholder {
-      color: #cdcdcd; }
+
+.mbl-input-field {
+  margin-bottom: 1em; }
+  .mbl-input-field > .label {
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 1rem; }
+
+/*.........................
+  Disabled text input styles
+.........................*/
+.mbl-text-input.disabled {
+  background: #e5e5e5;
+  border-color: #cdcdcd;
+  transition: none; }
+  .mbl-text-input.disabled::-webkit-input-placeholder {
+    color: #cdcdcd; }
+  .mbl-text-input.disabled:-moz-placeholder {
+    color: #cdcdcd; }
+  .mbl-text-input.disabled::-moz-placeholder {
+    color: #cdcdcd; }
+  .mbl-text-input.disabled:-ms-input-placeholder {
+    color: #cdcdcd; }
+  .mbl-text-input.disabled:hover, .mbl-text-input.disabled:focus {
+    cursor: not-allowed; }
     .mbl-text-input.disabled:hover::-webkit-input-placeholder, .mbl-text-input.disabled:focus::-webkit-input-placeholder {
       color: #cdcdcd; }
     .mbl-text-input.disabled:hover:-moz-placeholder, .mbl-text-input.disabled:focus:-moz-placeholder {
@@ -707,29 +838,44 @@ input[type=radio] {
       color: #cdcdcd; }
     .mbl-text-input.disabled:hover:-ms-input-placeholder, .mbl-text-input.disabled:focus:-ms-input-placeholder {
       color: #cdcdcd; }
-  .mbl-text-input.positive {
-    border-color: #006600; }
-    .mbl-text-input.positive:hover, .mbl-text-input.positive:focus {
-      background: rgba(0, 153, 102, 0.1);
-      border-color: #009966; }
-  .mbl-text-input.caution {
-    border-color: #ffcc00; }
-    .mbl-text-input.caution:hover, .mbl-text-input.caution:focus {
-      background: rgba(255, 204, 102, 0.1);
-      border-color: #ffcc66; }
-  .mbl-text-input.negative {
-    border-color: #cc0000; }
-    .mbl-text-input.negative:hover, .mbl-text-input.negative:focus {
-      background: rgba(153, 51, 51, 0.1);
-      border-color: #993333; }
 
-/*** Text area ***/
+/*.........................
+  Positive text input styles
+.........................*/
+.mbl-text-input.positive {
+  border-color: #006600; }
+  .mbl-text-input.positive:hover, .mbl-text-input.positive:focus {
+    background: rgba(0, 153, 102, 0.1);
+    border-color: #009966; }
+
+/*.........................
+  Caution text input styles
+.........................*/
+.mbl-text-input.caution {
+  border-color: #ffcc00; }
+  .mbl-text-input.caution:hover, .mbl-text-input.caution:focus {
+    background: rgba(255, 204, 102, 0.1);
+    border-color: #ffcc66; }
+
+/*.........................
+  Negative text input styles
+.........................*/
+.mbl-text-input.negative {
+  border-color: #cc0000; }
+  .mbl-text-input.negative:hover, .mbl-text-input.negative:focus {
+    background: rgba(153, 51, 51, 0.1);
+    border-color: #993333; }
+
+/*.........................
+  Text area styles
+.........................*/
 .mbl-text-area {
   font-family: "Nunito", sans-serif;
   font-weight: 700;
   color: #000000;
   background: #ffffff;
   padding: 0.5em 2em;
+  margin-bottom: 1em;
   border-style: none;
   border: 2px solid #006699;
   border-radius: 3px; }
@@ -753,7 +899,9 @@ input[type=radio] {
     .mbl-text-area:hover:-ms-input-placeholder, .mbl-text-area:focus:-ms-input-placeholder {
       color: #808080; }
 
-/*** Select menu ***/
+/*.........................
+  Select menu styles
+.........................*/
 .mbl-select-menu {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
@@ -773,14 +921,6 @@ input[type=radio] {
     outline: 2px solid #006699;
     outline-style: none;
     box-shadow: none; }
-
-/*** Labeled input field styles ***/
-.mbl-input-field {
-  margin-bottom: 1em; }
-  .mbl-input-field > .label {
-    font-family: "Nunito", sans-serif;
-    font-weight: 400;
-    font-size: 1rem; }
 
 /*.........................
   Mblazonry forms styles

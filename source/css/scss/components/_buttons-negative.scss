@@ -1,0 +1,14 @@
+/*......................... 
+  Negative button styles 
+.........................*/
+
+.mbl-btn {
+  &.negative {
+    background: $mbl-util-negative;
+    &:hover,
+    &:focus {
+      background: $mbl-util-negative-subtle;
+      color: $mbl-grey-30;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+/*......................... 
+  Small button styles 
+.........................*/
+
+.mbl-btn {
+  &.small {
+    padding: $mbl-pad-half;
+    font-size: $mbl-font-size-small;
+  }
+}

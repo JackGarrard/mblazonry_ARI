@@ -1,0 +1,19 @@
+/*......................... 
+  Disabled radio button styles 
+.........................*/
+
+.mbl-radio-btn {
+  &.disabled {
+    & label {
+      color: $mbl-grey-20;
+      &::before {
+        background-color: $mbl-grey-40;
+      }
+    }
+    &:hover label {
+      cursor: default;
+      color: $mbl-grey-20;
+      transition: none;
+    }
+  }
+}
