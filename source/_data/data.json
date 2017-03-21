@@ -16,6 +16,7 @@
   "txtFieldId": "txtFieldId",
   "txtFieldLabel": "Text field label",
   "dateFieldId": "dateFieldId",
+  "searchId": "search",
 
   "title": "Pattern Lab",
   "pageTitle": "Page Title",
