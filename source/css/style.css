@@ -506,14 +506,7 @@ a {
 [data-icon]:before {
   font-family: "FontAwesome";
   content: attr(data-icon);
-  speak: none;
-  margin-right: 0.5em; }
-
-[close-icon]:before {
-  font-family: "FontAwesome";
-  content: attr(close-icon);
-  speak: none;
-  margin-right: 0.5em; }
+  speak: none; }
 
 /*** buttons ***/
 .mbl-btn {
@@ -792,3 +785,15 @@ input[type=radio] {
 /*.........................
   Mblazonry forms styles
 .........................*/
+.mbl-icon {
+  display: inline-block;
+  line-height: 1;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer; }
+  .mbl-icon.negative {
+    color: #cc0000; }
+    .mbl-icon.negative:hover, .mbl-icon.negative:focus {
+      color: rgba(204, 0, 0, 0.7); }
