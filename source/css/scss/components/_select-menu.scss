@@ -1,0 +1,26 @@
+/*.........................
+  Select menu styles
+.........................*/
+
+.mbl-select-menu {
+  font-family: $mbl-font-secondary;
+  font-weight: $mbl-font-style-reg;
+  color: $mbl-grey-black;
+  background: $mbl-grey-white;
+  padding: $mbl-pad-half $mbl-pad-triple;
+  border-style: none;
+  border: 2px solid $mbl-util-neutral;
+  border-radius: $mbl-border-radius-small;
+  &:hover {
+    background: $mbl-util-neutral-subtle-dim10;
+    border-color: $mbl-util-neutral-subtle;
+  }
+  &:focus {
+    background: $mbl-grey-white;
+    border-color: $mbl-util-neutral-subtle;
+    border-radius: $mbl-border-radius-small;
+    outline: 2px solid $mbl-util-neutral;
+    outline-style: none;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,41 @@
+/*......................... 
+  Checkboxes styles 
+.........................*/
+
+input[type=checkbox] {
+  display: none;
+}
+
+.mbl-checkbox {
+  & label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: $mbl-pad-double-and-half;
+    margin-right: $mbl-pad;
+    font-size: $mbl-font-size-large;
+    font-family: $mbl-font-secondary;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      position: absolute;
+      left: 0;
+      bottom: 1px;
+      background-color: $mbl-grey-20;
+    }
+  }
+  &:hover label {
+    color: $mbl-util-neutral;
+    transition: all 0.2s ease;
+  }
+  & input[type=checkbox]:checked + label:before {
+    content: "\2714";
+    color: $mbl-brand-green;
+    font-size: 40px;
+    text-align: center;
+    line-height: 25px;
+  }
+}

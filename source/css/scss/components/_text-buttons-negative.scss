@@ -1,0 +1,13 @@
+/*......................... 
+  Negative text button styles 
+.........................*/
+
+.mbl-text-btn {
+  &.negative {
+    color: $mbl-util-negative;
+    &:hover,
+    &:focus {
+      color: $mbl-util-negative-subtle;
+    }
+  }
+}

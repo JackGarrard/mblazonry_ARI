@@ -1,0 +1,12 @@
+/*......................... 
+  Large button styles 
+.........................*/
+
+.mbl-btn {
+  &.large {
+    padding: $mbl-pad-and-half $mbl-pad-triple;
+    font-weight: $mbl-font-style-bold;
+    font-size: $mbl-font-size-large;
+    border-radius: $mbl-border-radius-large;
+  }
+}

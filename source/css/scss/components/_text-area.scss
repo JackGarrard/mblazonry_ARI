@@ -1,0 +1,22 @@
+/*.........................
+  Text area styles
+.........................*/
+
+.mbl-text-area {
+  font-family: $mbl-font-secondary;
+  font-weight: $mbl-font-style-bold;
+  color: $mbl-grey-black;
+  background: $mbl-grey-white;
+  padding: $mbl-pad-half $mbl-pad-double;
+  margin-bottom: $mbl-margin;
+  border-style: none;
+  border: 2px solid $mbl-util-neutral;
+  border-radius: $mbl-border-radius-small;
+  @include placeholder($mbl-grey-30);
+  &:hover,
+  &:focus {
+    background: $mbl-util-neutral-subtle-dim10;
+    border-color: $mbl-util-neutral-subtle;
+    @include placeholder($mbl-grey-50);
+  }
+}

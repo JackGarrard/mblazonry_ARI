@@ -1,0 +1,31 @@
+/*......................... 
+  Text button styles 
+.........................*/
+
+.mbl-text-btn {
+  position: relative;
+  background: none;
+  border: none;
+  font-family: $mbl-font-secondary;
+  font-weight: $mbl-font-style-bold;
+  font-size: $mbl-font-size-large;
+  color: $mbl-util-neutral;
+  &:after {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    background: url("../../../images/double-chevron-right.svg") no-repeat;
+    top: 5px;
+    right: -25px;
+    transition: all 0.2s ease;
+  }
+  &:hover,
+  &:focus {
+    color: $mbl-util-neutral-subtle;
+    cursor: pointer;
+    &:after {
+      right: -35px;
+    }
+  }
+}

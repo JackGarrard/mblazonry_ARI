@@ -1,0 +1,14 @@
+/*.........................
+  Positive text input styles
+.........................*/
+
+.mbl-text-input {
+  &.positive {
+    border-color: $mbl-util-positive;
+    &:hover,
+    &:focus {
+      background: $mbl-util-positive-subtle-dim10;
+      border-color: $mbl-util-positive-subtle;
+    }
+  }
+}
