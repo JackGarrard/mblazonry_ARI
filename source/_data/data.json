@@ -13,7 +13,9 @@
   "selectMenuOption": "Select menu option",
   "chkBoxId": "chkBoxId",
   "chkBoxLabel": "Checkbox label",
+  "txtFieldId": "txtFieldId",
   "txtFieldLabel": "Text field label",
+  "dateFieldId": "dateFieldId",
 
   "title": "Pattern Lab",
   "pageTitle": "Page Title",
