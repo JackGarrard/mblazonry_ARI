@@ -787,7 +787,7 @@ input[type=checkbox] {
   /* Can be changed to any size */
   position: relative;
   margin: 60px 0 20px 0;
-  background: #cdcdcd;
+  background: #e5e5e5;
   border-radius: 25px;
   padding: 10px; }
   .mbl-meter span {
@@ -798,4 +798,4 @@ input[type=checkbox] {
     border-bottom-right-radius: 8px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-color: #006600; }
+    background-color: #009966; }
