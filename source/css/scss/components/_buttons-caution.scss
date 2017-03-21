@@ -1,0 +1,15 @@
+/*......................... 
+  Caution button styles 
+.........................*/
+
+.mbl-btn {
+  &.caution {
+    background: $mbl-util-caution;
+    color: $mbl-grey-80;
+    &:hover,
+    &:focus {
+      background: $mbl-util-caution-subtle;
+      color: $mbl-grey-50;
+    }
+  }
+}

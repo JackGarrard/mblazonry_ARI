@@ -1,0 +1,17 @@
+/*.........................
+  Disabled text input styles
+.........................*/
+
+.mbl-text-input {
+  &.disabled {
+    background: $mbl-grey-10;
+    border-color: $mbl-grey-20;
+    transition: none;
+    @include placeholder($mbl-grey-20);
+    &:hover,
+    &:focus {
+      @include placeholder($mbl-grey-20);
+      cursor: not-allowed;
+    }
+  }
+}
