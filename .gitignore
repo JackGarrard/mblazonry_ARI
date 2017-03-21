@@ -7,5 +7,5 @@ Thumbs.db
 .idea/
 public
 # Ignoring css and map files 
-.css
-.map
+*.css
+*.map
