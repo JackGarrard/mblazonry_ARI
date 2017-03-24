@@ -30,6 +30,8 @@
 * text-buttons-positive.........Styles specific to positive text buttons
 * text-buttons-caution..........Styles specific to caution text buttons
 * text-buttons-negative.........Styles specific to negative text buttons
+* icon-buttons..................Default icon button styles
+* icon-buttons-negative.........Styles specific to negative icon buttons
 * radio-buttons.................Default radio button styles
 * radio-buttons-disabled........Styles specific to disabled radio buttons
 * checkboxes....................Default checkboxes styles
@@ -672,6 +674,17 @@ a {
   .mbl-text-btn.negative:hover, .mbl-text-btn.negative:focus {
     color: #993333; }
 
+.mbl-icon-btn {
+  display: inline-block;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer; }
+
+.mbl-icon-btn.negative {
+  color: rgba(204, 0, 0, 0.7); }
+  .mbl-icon-btn.negative:hover, .mbl-icon-btn.negative:focus {
+    color: #cc0000; }
+
 /*......................... 
   Radio button styles 
 .........................*/
@@ -925,15 +938,6 @@ input[type=checkbox] {
 /*.........................
   Mblazonry forms styles
 .........................*/
-.mbl-icon {
-  display: inline-block;
-  line-height: 1;
-  font-family: "Nunito", sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  text-align: center;
-  cursor: pointer; }
-  .mbl-icon.negative {
-    color: #cc0000; }
-    .mbl-icon.negative:hover, .mbl-icon.negative:focus {
-      color: rgba(204, 0, 0, 0.7); }
+.mbl-form-test-feb27 {
+  border: 2xp solid #006699;
+  border-radius: 3px; }

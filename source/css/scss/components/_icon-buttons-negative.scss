@@ -1,0 +1,9 @@
+.mbl-icon-btn{
+&.negative {
+    color:$mbl-util-negative-dim70;
+    &:hover,
+    &:focus {
+      color: $mbl-util-negative;
+    }
+  }
+}
