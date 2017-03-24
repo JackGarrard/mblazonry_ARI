@@ -32,6 +32,8 @@
 * text-buttons-positive.........Styles specific to positive text buttons
 * text-buttons-caution..........Styles specific to caution text buttons
 * text-buttons-negative.........Styles specific to negative text buttons
+* icon-buttons..................Default icon button styles
+* icon-buttons-negative.........Styles specific to negative icon buttons
 * radio-buttons.................Default radio button styles
 * radio-buttons-disabled........Styles specific to disabled radio buttons
 * checkboxes....................Default checkboxes styles
@@ -80,6 +82,8 @@
 @import "scss/components/text-buttons-positive";
 @import "scss/components/text-buttons-caution";
 @import "scss/components/text-buttons-negative";
+@import "scss/components/icon-buttons";
+@import "scss/components/icon-buttons-negative";
 @import "scss/components/radio-buttons";
 @import "scss/components/radio-buttons-disabled";
 @import "scss/components/checkboxes";
