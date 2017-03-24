@@ -3,6 +3,7 @@
 ## Mar 24 - 12:35pm
 * Merged in 'searchbar' - search bar molecule have been modified and approved
 * Merged in 'starterkitbloat-remove' - residual patterns from the original starterkit have been removed - additional json and js files will need to be examined and removed if possible
+* Merged in 'fontawesome-include' - new icon-button-close(.md/.mustache) files and related scss partials
 
 ## Mar 18 - 2:50pm
 * Merged 'scssmustache-refactor' into 'dev']
