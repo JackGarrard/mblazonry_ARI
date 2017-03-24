@@ -1,52 +1,60 @@
-.container-4 {
+.mbl-search-bar {
     overflow: hidden;
     width: 300px;
     vertical-align: middle;
     white-space: nowrap;
-    & input#search {
+    & input#mblSearchId {
         width: 300px;
         height: 50px;
-        background: $mbl-grey-20;
+        background: $mbl-util-neutral-subtle-dim60;
         border: none;
-        font-size: 10pt;
+        font-size: $mbl-font-size-small;
         float: left;
-        color: #fff;
-        padding-left: 15px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
-    }
-    & input#search::-webkit-input-placeholder {
-        color: white;
-    }
-    & input#search:-moz-placeholder {
-        color: white;
-    }
-    & input#search::-moz-placeholder {
-        color: white;
-    }
-    & input#search:-ms-input-placeholder {
-        color: white;
+        color: $mbl-grey-white;
+        padding-left: $mbl-pad-double;
+        -webkit-border-radius: $mbl-border-radius-med;
+        -moz-border-radius: $mbl-border-radius-med;
+        border-radius: $mbl-border-radius-med;
+      &::-webkit-input-placeholder {
+        color: $mbl-grey-white;
+      }
+      &:-moz-placeholder {
+        color: $mbl-grey-white;
+      }
+      &::-moz-placeholder {
+        color: $mbl-grey-white;
+      }
+      &:-ms-input-placeholder {
+        color: $mbl-grey-white;
+      }
+      &:hover,
+      &:focus {
+        background: $mbl-util-neutral-subtle-dim70; 
+      }
     }
     & button.icon {
-        -webkit-border-top-right-radius: 5px;
-        -webkit-border-bottom-right-radius: 5px;
-        -moz-border-radius-topright: 5px;
-        -moz-border-radius-bottomright: 5px;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
+        -webkit-border-top-right-radius: $mbl-border-radius-med;
+        -webkit-border-bottom-right-radius: $mbl-border-radius-med;
+        -moz-border-radius-topright: $mbl-border-radius-med;
+        -moz-border-radius-bottomright: $mbl-border-radius-med;
+        border-top-right-radius: $mbl-border-radius-med;
+        border-bottom-right-radius: $mbl-border-radius-med;
         border: none;
-        background: $mbl-grey-40;
+        background: $mbl-util-neutral-dim40;
         height: 50px;
         width: 50px;
-        color: white;
+        color: $mbl-grey-white;
         opacity: 0;
-        font-size: 10pt;
+        font-size: $mbl-font-size-small;
         -webkit-transition: all .55s ease;
         -moz-transition: all .55s ease;
         -ms-transition: all .55s ease;
         -o-transition: all .55s ease;
         transition: all .55s ease;
+      &:hover,
+      &:focus {
+        background: $mbl-util-neutral-dim30;
+      }
     }
     &:hover button.icon,
     &:active button.icon,
@@ -54,8 +62,5 @@
         outline: none;
         opacity: 1;
         margin-left: -50px;
-    }
-    &:hover button.icon:hover {
-        background: $mbl-grey-20;
     }
 }

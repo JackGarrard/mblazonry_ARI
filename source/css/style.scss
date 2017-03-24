@@ -44,6 +44,8 @@
 * text-area.....................Default text area styles
 * select-menu...................Default select menu styles
 * forms.........................Styles specific to all forms
+* meter.........................Styles specific to the meter (progress bar)
+* search-bar....................Styles specific to the search bar
 * 
 */
 
@@ -90,3 +92,5 @@
 @import "scss/components/text-area";
 @import "scss/components/select-menu";
 @import "scss/components/forms";
+@import "scss/components/meter";
+@import "scss/components/search-bar";
