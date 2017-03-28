@@ -2,6 +2,7 @@
 
 ## Mar 28 - 1:05pm
 * Merged in 'textAreaLabel-include' - a labeled text area molecule was created, tested, and uploaded
+* Merged in 'hedaer-include' - a molecule has been created which combines a header with a placeholder icon
 
 ## Mar 24 - 12:35pm
 * Merged in 'searchbar' - search bar molecule have been modified and approved
