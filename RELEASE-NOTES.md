@@ -4,6 +4,7 @@
 * Merged in 'textAreaLabel-include' - a labeled text area molecule was created, tested, and approved
 * Merged in 'hedaer-include' - a molecule ('header') has been created which combines a header tag with a placeholder icon
 * Merged in 'searchbar' - a molecule ('labeled-meter') has been created, tested, and approved
+* Merged in 'icon-catalogue' - Multiple atoms (patterns/atoms/icons) have been created with commonly used fontawesome icons. Related .md files have been made which include the unicode for said icon.
 
 ## Mar 24 - 12:35pm
 * Merged in 'searchbar' - search bar molecule have been modified and approved
