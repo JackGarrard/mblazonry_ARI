@@ -1,4 +1,5 @@
-<div class="mbl-meter">
-  <span></span>
+<div class="mbl-labeled-meter">
+  <label for="{{ meterId }}" class="meter-label">{{ meterLabelText }}</label>
+  {{> atoms-meter }}
+  <p class="meter-loading">Loading<span>.</span><span>.</span><span>.</span></p>
 </div>
-<p class="loading">Loading<span>.</span><span>.</span><span>.</span></p>

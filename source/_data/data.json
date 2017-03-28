@@ -11,6 +11,8 @@
   "txtAreaPlaceholder": "Text area placeholder",
   "selectMenuLabel": "Select menu label",
   "selectMenuOption": "Select menu option",
+  "meterId": "meterId",
+  "meterLabelText": "Meter label text",
   "chkBoxId": "chkBoxId",
   "chkBoxLabel": "Checkbox label",
   "txtFieldId": "txtFieldId",
