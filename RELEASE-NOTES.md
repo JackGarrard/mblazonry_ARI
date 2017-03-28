@@ -1,5 +1,8 @@
 # Release Notes
 
+## Mar 28 - 1:05pm
+* Merged in 'textAreaLabel-include' - a labeled text area molecule was created, tested, and uploaded
+
 ## Mar 24 - 12:35pm
 * Merged in 'searchbar' - search bar molecule have been modified and approved
 * Merged in 'starterkitbloat-remove' - residual patterns from the original starterkit have been removed - additional json and js files will need to be examined and removed if possible
