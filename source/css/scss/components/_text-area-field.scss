@@ -1,0 +1,14 @@
+/*.........................
+  Styles for text area field (labeled text area)
+.........................*/
+
+.mbl-labeled-text-area {
+  margin-bottom: $mbl-pad;
+  &>.label {
+    display: block;
+    margin-bottom: $mbl-pad-half;
+    font-family: $mbl-font-secondary;
+    font-weight: $mbl-font-style-reg;
+    font-size: $mbl-font-size-med;
+  }
+}

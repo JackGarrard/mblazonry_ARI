@@ -43,6 +43,8 @@
 * text-input-negative...........Styles specific to negative text inputs
 * text-area.....................Default text area styles
 * select-menu...................Default select menu styles
+* text-input-field..............Styles specific to text input fields
+* text-area-field...............Styles specific to text area fields
 * forms.........................Styles specific to all forms
 * 
 */
@@ -819,13 +821,6 @@ input[type=checkbox] {
     .mbl-text-input:hover:-ms-input-placeholder, .mbl-text-input:focus:-ms-input-placeholder {
       color: #808080; }
 
-.mbl-input-field {
-  margin-bottom: 1em; }
-  .mbl-input-field > .label {
-    font-family: "Nunito", sans-serif;
-    font-weight: 400;
-    font-size: 1rem; }
-
 /*.........................
   Disabled text input styles
 .........................*/
@@ -883,6 +878,7 @@ input[type=checkbox] {
   Text area styles
 .........................*/
 .mbl-text-area {
+  display: block;
   font-family: "Nunito", sans-serif;
   font-weight: 700;
   color: #000000;
@@ -934,6 +930,28 @@ input[type=checkbox] {
     outline: 2px solid #006699;
     outline-style: none;
     box-shadow: none; }
+
+/*.........................
+  Styles for input Field
+.........................*/
+.mbl-input-field {
+  margin-bottom: 1em; }
+  .mbl-input-field > .label {
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 1rem; }
+
+/*.........................
+  Styles for text area field (labeled text area)
+.........................*/
+.mbl-labeled-text-area {
+  margin-bottom: 1em; }
+  .mbl-labeled-text-area > .label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 1rem; }
 
 /*.........................
   Mblazonry forms styles

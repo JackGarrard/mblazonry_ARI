@@ -45,6 +45,8 @@
 * text-input-negative...........Styles specific to negative text inputs
 * text-area.....................Default text area styles
 * select-menu...................Default select menu styles
+* text-input-field..............Styles specific to text input fields
+* text-area-field...............Styles specific to text area fields
 * forms.........................Styles specific to all forms
 * 
 */
@@ -93,4 +95,6 @@
 @import "scss/components/text-input-negative";
 @import "scss/components/text-area";
 @import "scss/components/select-menu";
+@import "scss/components/text-input-field";
+@import "scss/components/text-area-field";
 @import "scss/components/forms";
