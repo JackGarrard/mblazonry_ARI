@@ -2,6 +2,17 @@
   Button styles 
 .........................*/
 
+
+/*icon creation and styling*/
+
+[data-icon]:before {
+  font-family: $mbl-fontawesome;
+  content: attr(data-icon);
+  speak: none;
+}
+
+/*** buttons ***/
+
 .mbl-btn {
   display: inline-block;
   background: $mbl-util-neutral;

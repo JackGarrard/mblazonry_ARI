@@ -1,0 +1,82 @@
+/*----- Menu Outline -----*/
+.mbl-menu-wrap {
+    width:100%;
+    box-shadow:$mbl-space rgba(0,0,0,0.2);
+    background:$mbl-grey-black;
+}
+ 
+.mbl-menu {
+    width:1000px;
+    margin:0px auto;
+}
+ 
+.mbl-menu li {
+    margin:0px;
+    list-style:none;
+}
+ 
+.mbl-menu a {
+    transition:all linear 0.15s;
+    color:$mbl-grey-50;
+}
+ 
+.mbl-menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:$mbl-grey-white;
+}
+ 
+.mbl-menu .arrow {
+    font-size:$mbl-font-small;
+    line-height:0%;
+}
+ 
+/*----- Top Level -----*/
+.mbl-menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:$mbl-font-med;
+}
+ 
+.mbl-menu > ul > li > a {
+    padding:$mbl-pad-and-half;
+    display:inline-block;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+ 
+.mbl-menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:$mbl-grey-black;
+}
+ 
+/*----- Bottom Level -----*/
+.mbl-menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+ 
+.mbl-sub-menu {
+    width:100%;
+    padding:$mbl-pad;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:$mbl-pad rgba(0,0,0,0.2);
+    background:$mbl-grey-white;
+}
+ 
+.mbl-sub-menu li {
+    display:block;
+    font-size:$mbl-font-med;
+}
+ 
+.mbl-sub-menu li a {
+    padding:$mbl-pad;
+    display:block;
+}
+ 
+.mbl-sub-menu li a:hover, .sub-menu .current-item a {
+    background:$mbl-grey-black;
+}

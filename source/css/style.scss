@@ -32,6 +32,8 @@
 * text-buttons-positive.........Styles specific to positive text buttons
 * text-buttons-caution..........Styles specific to caution text buttons
 * text-buttons-negative.........Styles specific to negative text buttons
+* icon-buttons..................Default icon button styles
+* icon-buttons-negative.........Styles specific to negative icon buttons
 * radio-buttons.................Default radio button styles
 * radio-buttons-disabled........Styles specific to disabled radio buttons
 * checkboxes....................Default checkboxes styles
@@ -44,6 +46,8 @@
 * text-area.....................Default text area styles
 * select-menu...................Default select menu styles
 * forms.........................Styles specific to all forms
+* meter.........................Styles specific to the meter (progress bar)
+* search-bar....................Styles specific to the search bar
 * 
 */
 
@@ -78,6 +82,8 @@
 @import "scss/components/text-buttons-positive";
 @import "scss/components/text-buttons-caution";
 @import "scss/components/text-buttons-negative";
+@import "scss/components/icon-buttons";
+@import "scss/components/icon-buttons-negative";
 @import "scss/components/radio-buttons";
 @import "scss/components/radio-buttons-disabled";
 @import "scss/components/checkboxes";
@@ -90,3 +96,5 @@
 @import "scss/components/text-area";
 @import "scss/components/select-menu";
 @import "scss/components/forms";
+@import "scss/components/meter";
+@import "scss/components/search-bar";

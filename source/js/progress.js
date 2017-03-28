@@ -1,4 +1,4 @@
-var progress = document.querySelectorAll(".c-progress");
+var progress = document.querySelectorAll(".mbl-progress");
 
 [].forEach.call(progress, function(el) {
 	el.classList.add("start");
