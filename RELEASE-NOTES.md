@@ -1,8 +1,9 @@
 # Release Notes
 
 ## Mar 28 - 1:05pm
-* Merged in 'textAreaLabel-include' - a labeled text area molecule was created, tested, and uploaded
-* Merged in 'hedaer-include' - a molecule has been created which combines a header with a placeholder icon
+* Merged in 'textAreaLabel-include' - a labeled text area molecule was created, tested, and approved
+* Merged in 'hedaer-include' - a molecule ('header') has been created which combines a header tag with a placeholder icon
+* Merged in 'searchbar' - a molecule ('labeled-meter') has been created, tested, and approved
 
 ## Mar 24 - 12:35pm
 * Merged in 'searchbar' - search bar molecule have been modified and approved
