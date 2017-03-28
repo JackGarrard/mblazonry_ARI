@@ -26,10 +26,14 @@ $mbl-grey-white: #ffffff;
 /*** Utilities ***/
 
 
-/*** Utility classes are used to provide feedback to users, such as in alert messages, form validation, etc. ***/
+/**
+* Utility classes are used to provide feedback to users, such as in alert messages, form validation, etc. 
+*
+* All utilities include a main colour and a 'subtle' colour which can be used for hover animations, etc.
+**/
 
 
-/*** utility positive ***/
+/*** utility positive (green) ***/
 
 $mbl-util-positive: #006600;
 $mbl-util-positive-dim90: transparentize( $mbl-util-positive, 0.1);
@@ -52,7 +56,7 @@ $mbl-util-positive-subtle-dim30: transparentize( $mbl-util-positive-subtle, 0.7)
 $mbl-util-positive-subtle-dim20: transparentize( $mbl-util-positive-subtle, 0.8);
 $mbl-util-positive-subtle-dim10: transparentize( $mbl-util-positive-subtle, 0.9);
 
-/*** utility neutral ***/
+/*** utility neutral (blue) ***/
 
 $mbl-util-neutral: #006699;
 $mbl-util-neutral-dim90: transparentize( $mbl-util-neutral, 0.1);
@@ -75,7 +79,7 @@ $mbl-util-neutral-subtle-dim30: transparentize( $mbl-util-neutral-subtle, 0.7);
 $mbl-util-neutral-subtle-dim20: transparentize( $mbl-util-neutral-subtle, 0.8);
 $mbl-util-neutral-subtle-dim10: transparentize( $mbl-util-neutral-subtle, 0.9);
 
-/*** utility caution ***/
+/*** utility caution (yellow) ***/
 
 $mbl-util-caution: #ffcc00;
 $mbl-util-caution-dim90: transparentize( $mbl-util-caution, 0.1);
@@ -98,7 +102,7 @@ $mbl-util-caution-subtle-dim30: transparentize( $mbl-util-caution-subtle, 0.7);
 $mbl-util-caution-subtle-dim20: transparentize( $mbl-util-caution-subtle, 0.8);
 $mbl-util-caution-subtle-dim10: transparentize( $mbl-util-caution-subtle, 0.9);
 
-/*** utility negative ***/
+/*** utility negative (red) ***/
 
 $mbl-util-negative: #cc0000;
 $mbl-util-negative-dim90: transparentize( $mbl-util-negative, 0.1);

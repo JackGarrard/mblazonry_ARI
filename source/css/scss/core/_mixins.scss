@@ -2,6 +2,12 @@
     Mixins
 ..........................*/
 
+/**
+*
+* This stylesheet contains mixins that can be used across the site
+*
+**/
+
 @mixin placeholder($color, $size:"") {
   &::-webkit-input-placeholder {
     color: $color;
