@@ -47,6 +47,7 @@
 * text-area-field...............Styles specific to text area fields
 * forms.........................Styles specific to all forms
 * meter.........................Styles specific to the meter (progress bar)
+* labeled-meter.................Styles specific to the labeled meter
 * search-bar....................Styles specific to the search bar
 * 
 */
@@ -1037,12 +1038,15 @@ input[type=checkbox] {
   border: 2xp solid #006699;
   border-radius: 3px; }
 
-/** MAIN STYLING FOR METER BAR **/
+/*.........................
+  Style for meter (progress bar)
+.........................*/
 .mbl-meter {
   height: 50px;
+  width: 50%;
   /* Can be changed to any size */
   position: relative;
-  margin: 60px 0 20px 0;
+  margin: 10px 0 10px 0;
   background: #e5e5e5;
   border-radius: 25px;
   padding: 10px; }
@@ -1110,3 +1114,32 @@ input[type=checkbox] {
     outline: none;
     opacity: 1;
     margin-left: -50px; }
+
+.mbl-labeled-meter > .meter-label {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.25rem;
+  font-style: 700; }
+
+.mbl-labeled-meter > .meter-loading {
+  font-size: 1rem;
+  font-family: "Nunito", sans-serif;
+  color: #006699;
+  float: inherit;
+  padding-left: 1.5em; }
+  .mbl-labeled-meter > .meter-loading span {
+    animation-name: blink;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both; }
+    .mbl-labeled-meter > .meter-loading span:nth-child(2) {
+      animation-delay: .2s; }
+    .mbl-labeled-meter > .meter-loading span:nth-child(3) {
+      animation-delay: .4s; }
+
+@keyframes blink {
+  0% {
+    opacity: .2; }
+  20% {
+    opacity: 1; }
+  100% {
+    opacity: .2; } }
