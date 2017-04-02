@@ -1,0 +1,9 @@
+.mbl-checklist {
+  width: 40%;
+  border: $mbl-border-sm solid $mbl-grey-20;
+  border-radius: $mbl-border-radius-med;
+  padding: $mbl-pad-double;
+  &>h6{
+    margin-top: $mbl-margin-and-half;
+  }
+}
