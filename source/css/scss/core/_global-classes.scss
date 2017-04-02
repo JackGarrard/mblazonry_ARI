@@ -2,11 +2,38 @@
     Global classes
 .........................*/
 
+/**
+*
+* Global classes are pre-built classes that can be used for rapid prototyping, NOT final deliverables
+*
+* TABLE OF CONTENTS:
+* 1. Clearfix
+* 2. Hidden
+* 3. Alignment
+* 4. Feedback colours
+* 5. Fonts (families, styles, sizes)
+* 6. Floats
+* 7. Padding
+* 8. Padding-right
+* 9. Padding-left
+* 10. Padding-top
+* 11. Padding-bottom
+* 12. Margin
+* 13. Margin-right
+* 14. Margin-left
+* 15. Margin-top
+* 16. Margin-bottom
+*
+**/
 
-/*** Clearfix ***/
 
 
-/* These classes are based on the micro clearfix hack by Nicholas Gallagher - http://nicolasgallagher.com/micro-clearfix-hack/ */
+/*.........................
+    Clearfix
+.........................*/
+
+
+/* These clearfix classes are based on the micro clearfix hack by Nicholas Gallagher - http://nicolasgallagher.com/micro-clearfix-hack/ */
 
 
 /**
@@ -17,7 +44,7 @@
  *    that are clearfixed.
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
- */
+ **/
 
 .cf:before,
 .cf:after {
@@ -42,7 +69,9 @@
 }
 
 
-/*** Hidden ***/
+/*.........................
+    Hidden
+.........................*/
 
 .is-hidden {
   display: none !important;
