@@ -1,5 +1,10 @@
 # Release Notes
 
+## Apr 2 - 2:45pm
+* Merged in 'comment-section' - an organism has been created ('comment-section') which includes: header, text area, and button
+* Merged in 'labeled-block' - an organism has been created ('block-organism') which includes: header, labeled meter, buttons (x2)
+* Merged in 'checklist-block' - An organism has been created which includes: header, labeled meter, checkboxes (x4), input fields (x4), text area, and buttons (x2)
+
 ## Mar 28 - 1:05pm
 * Merged in 'textAreaLabel-include' - a labeled text area molecule was created, tested, and approved
 * Merged in 'hedaer-include' - a molecule ('header') has been created which combines a header tag with a placeholder icon
