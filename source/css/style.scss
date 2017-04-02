@@ -49,6 +49,7 @@
 * text-area-field...............Styles specific to text area fields
 * forms.........................Styles specific to all forms
 * meter.........................Styles specific to the meter (progress bar)
+* labeled-meter.................Styles specific to the labeled meter
 * search-bar....................Styles specific to the search bar
 * 
 */
@@ -102,3 +103,5 @@
 @import "scss/components/forms";
 @import "scss/components/meter";
 @import "scss/components/search-bar";
+@import "scss/components/labeled-meter";
+
