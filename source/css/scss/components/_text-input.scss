@@ -8,7 +8,7 @@
   border-style: none;
   border: 2px solid $mbl-util-neutral;
   padding: $mbl-pad-half $mbl-pad;
-  margin: $mbl-margin;
+  margin: $mbl-margin $mbl-margin $mbl-margin-and-half $mbl-margin;
   color: $mbl-grey-black;
   font-weight: $mbl-font-style-bold;
   font-family: $mbl-font-secondary;
@@ -21,12 +21,3 @@
     @include placeholder($mbl-grey-50);
   }
 }
-
-//.mbl-input-field {
-//  margin-bottom: $mbl-pad;
-//  &>.label {
-//    font-family: $mbl-font-secondary;
-//    font-weight: $mbl-font-style-reg;
-//    font-size: $mbl-font-size-med;
-//  }
-//}
