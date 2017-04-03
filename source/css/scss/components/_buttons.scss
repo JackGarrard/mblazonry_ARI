@@ -22,6 +22,7 @@
   font-weight: $mbl-font-style-reg;
   font-size: $mbl-font-size-med;
   padding: $mbl-pad $mbl-pad-and-half;
+  margin: $mbl-margin-quarter;
   border: 0;
   border-radius: $mbl-border-radius-med;
   text-align: center;
@@ -31,5 +32,14 @@
   &:focus {
     background: $mbl-util-neutral-subtle;
     color: $mbl-grey-80;
+  }
+  &>.mbl-btn-icon{
+    margin-right: $mbl-margin-and-half;
+  }
+  &>.mbl-sm-btn-icon{
+    margin-right: $mbl-margin;
+  }
+  &>.mbl-lg-btn-icon{
+    margin-right: $mbl-margin-triple;
   }
 }

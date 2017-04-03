@@ -633,6 +633,7 @@ a {
   font-weight: 400;
   font-size: 1rem;
   padding: 1em 1.5em;
+  margin: 0.25em;
   border: 0;
   border-radius: 5px;
   text-align: center;
@@ -641,6 +642,12 @@ a {
   .mbl-btn:hover, .mbl-btn:focus {
     background: #3399ff;
     color: #333333; }
+  .mbl-btn > .mbl-btn-icon {
+    margin-right: 1.5em; }
+  .mbl-btn > .mbl-sm-btn-icon {
+    margin-right: 1em; }
+  .mbl-btn > .mbl-lg-btn-icon {
+    margin-right: 3em; }
 
 /*......................... 
   Disabled button styles 
