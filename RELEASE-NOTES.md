@@ -4,6 +4,7 @@
 * Merged in 'comment-section' - an organism has been created ('comment-section') which includes: header, text area, and button
 * Merged in 'labeled-block' - an organism has been created ('block-organism') which includes: header, labeled meter, buttons (x2)
 * Merged in 'checklist-block' - An organism has been created which includes: header, labeled meter, checkboxes (x4), input fields (x4), text area, and buttons (x2)
+* Merged in 'add-actions-sidebar' - Added icon-text-buttons and varying states (e.g. positive, caution, etc.)
 
 ## Mar 28 - 1:05pm
 * Merged in 'textAreaLabel-include' - a labeled text area molecule was created, tested, and approved
