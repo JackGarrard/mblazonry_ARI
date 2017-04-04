@@ -1,8 +1,10 @@
-<form>
+<div style="width: 500px;">
     <div>{{>molecules-header}}</div>
     <div>{{>molecules-labeled-text-area}}</div>
-    <div>{{>molecules-radio-button}}</div>
-    <div>{{>molecules-radio-button-disabled}}</div>
-    <div><span>{{>atoms-button-positive}}</span>
-    <span>{{>atoms-button-negative}}</span></div>
-</form>
+    <div style="float: right; width: 375px;">{{>molecules-radio-button}}</div>
+    <br>
+    <br>
+    <div style="float: right; width: 375px;">{{>molecules-radio-button-disabled}}</div>
+    <div style="float: right; width: 400px;">{{>atoms-button-positive}}{{>atoms-button-negative}}</div>
+    <br style="clear: left;" />
+</div>
