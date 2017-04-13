@@ -1,0 +1,26 @@
+.mbl-list{
+  border: 2px solid $mbl-grey-20;
+  border-radius: $mbl-border-radius-med;
+  padding: $mbl-pad $mbl-pad-and-half;
+  background-color: $mbl-grey-10;
+  
+  &>.mbl-list-extras{
+    float: right;
+    margin-top: -30px;
+  }
+  &>.mbl-list-content{
+  }
+  &>.mbl-list-add-card{
+    border-radius: 0 0 $mbl-border-radius-med $mbl-border-radius-med;
+    font-family: $mbl-font-secondary;
+    position: relative;
+    display: block;
+    flex: 0 0 auto;
+    margin: -1em -1.5em;
+    padding: $mbl-pad $mbl-pad-and-half;
+    &:hover{
+      background-color: $mbl-grey-20;
+      cursor: pointer;
+    }
+  }
+}

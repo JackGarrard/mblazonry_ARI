@@ -52,6 +52,7 @@
 * labeled-meter.................Styles specific to the labeled meter
 * search-bar....................Styles specific to the search bar
 * checklist.....................Styles specific to the checklist organism
+* list..........................Styles specific to the list organism
 * 
 */
 
@@ -106,3 +107,4 @@
 @import "scss/components/search-bar";
 @import "scss/components/labeled-meter";
 @import "scss/components/checklist";
+@import "scss/components/list";
