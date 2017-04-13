@@ -1,0 +1,12 @@
+.mbl-sample-card{
+  border: 2px solid $mbl-grey-40;
+  border-radius: $mbl-border-radius-med;
+  padding: $mbl-pad $mbl-pad-and-half;
+  background-color: $mbl-grey-white;
+  margin-bottom: $mbl-pad-half;
+  
+  &>h6{
+    color: $mbl-grey-70;
+    margin-bottom: 0.5em;
+  }
+}

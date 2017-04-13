@@ -1181,3 +1181,13 @@ input[type=checkbox] {
     .mbl-list > .mbl-list-add-card:hover {
       background-color: #cdcdcd;
       cursor: pointer; }
+
+.mbl-sample-card {
+  border: 2px solid #999999;
+  border-radius: 5px;
+  padding: 1em 1.5em;
+  background-color: #ffffff;
+  margin-bottom: 0.5em; }
+  .mbl-sample-card > h6 {
+    color: #4d4d4d;
+    margin-bottom: 0.5em; }
